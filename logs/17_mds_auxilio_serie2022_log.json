@@ -1,0 +1,162 @@
+{
+ "api": "https://aplicacoes.mds.gov.br/sagi/servicos/misocial",
+ "baixados": [
+  {
+   "mes": "202201",
+   "linhas": 5571,
+   "numFound": 5571,
+   "em": "2026-10-07 10:07:26"
+  },
+  {
+   "mes": "202202",
+   "linhas": 5571,
+   "numFound": 5571,
+   "em": "2026-10-07 10:07:28"
+  },
+  {
+   "mes": "202203",
+   "linhas": 5571,
+   "numFound": 5571,
+   "em": "2026-10-07 10:07:31"
+  },
+  {
+   "mes": "202204",
+   "linhas": 5571,
+   "numFound": 5571,
+   "em": "2026-10-07 10:07:33"
+  },
+  {
+   "mes": "202205",
+   "linhas": 5571,
+   "numFound": 5571,
+   "em": "2026-10-07 10:07:36"
+  },
+  {
+   "mes": "202206",
+   "linhas": 5571,
+   "numFound": 5571,
+   "em": "2026-10-07 10:07:39"
+  },
+  {
+   "mes": "202207",
+   "linhas": 5571,
+   "numFound": 5571,
+   "em": "2026-10-07 10:07:41"
+  },
+  {
+   "mes": "202211",
+   "linhas": 5571,
+   "numFound": 5571,
+   "em": "2026-10-07 10:07:44"
+  },
+  {
+   "mes": "202212",
+   "linhas": 5571,
+   "numFound": 5571,
+   "em": "2026-10-07 10:07:46"
+  }
+ ],
+ "ja_existiam": [
+  "202208",
+  "202209",
+  "202210"
+ ],
+ "serie": [
+  {
+   "anomes": "202201",
+   "municipios": 5571,
+   "familias": 17566127,
+   "pessoas": 50975299,
+   "valor_pago_reais": 3705233574.0,
+   "valor_medio_familia": 210.93
+  },
+  {
+   "anomes": "202202",
+   "municipios": 5571,
+   "familias": 18017489,
+   "pessoas": 50545110,
+   "valor_pago_reais": 3805316470.0,
+   "valor_medio_familia": 211.2
+  },
+  {
+   "anomes": "202203",
+   "municipios": 5571,
+   "familias": 18021825,
+   "pessoas": 50537182,
+   "valor_pago_reais": 3908622871.0,
+   "valor_medio_familia": 216.88
+  },
+  {
+   "anomes": "202204",
+   "municipios": 5571,
+   "familias": 18063021,
+   "pessoas": 50455698,
+   "valor_pago_reais": 3904369685.0,
+   "valor_medio_familia": 216.15
+  },
+  {
+   "anomes": "202205",
+   "municipios": 5571,
+   "familias": 18119192,
+   "pessoas": 50313248,
+   "valor_pago_reais": 3829940066.0,
+   "valor_medio_familia": 211.37
+  },
+  {
+   "anomes": "202206",
+   "municipios": 5571,
+   "familias": 18154897,
+   "pessoas": 50137598,
+   "valor_pago_reais": 3784010337.0,
+   "valor_medio_familia": 208.43
+  },
+  {
+   "anomes": "202207",
+   "municipios": 5571,
+   "familias": 18134548,
+   "pessoas": 53585835,
+   "valor_pago_reais": 7318354846.0,
+   "valor_medio_familia": 403.56
+  },
+  {
+   "anomes": "202208",
+   "municipios": 5571,
+   "familias": 20200862,
+   "pessoas": 53876257,
+   "valor_pago_reais": 12144301939.0,
+   "valor_medio_familia": 601.18
+  },
+  {
+   "anomes": "202209",
+   "municipios": 5571,
+   "familias": 20653849,
+   "pessoas": 54764061,
+   "valor_pago_reais": 12474265191.0,
+   "valor_medio_familia": 603.97
+  },
+  {
+   "anomes": "202210",
+   "municipios": 5571,
+   "familias": 21130969,
+   "pessoas": 55361591,
+   "valor_pago_reais": 12815647136.0,
+   "valor_medio_familia": 606.49
+  },
+  {
+   "anomes": "202211",
+   "municipios": 5571,
+   "familias": 21534293,
+   "pessoas": 55263465,
+   "valor_pago_reais": 13026126965.0,
+   "valor_medio_familia": 604.9
+  },
+  {
+   "anomes": "202212",
+   "municipios": 5571,
+   "familias": 21601182,
+   "pessoas": 55808906,
+   "valor_pago_reais": 13017033874.0,
+   "valor_medio_familia": 602.61
+  }
+ ]
+}

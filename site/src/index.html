@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cidade não vota. Gente vota. · Eleições 2026</title>
+<meta name="description" content="Resposta, painel por painel, ao site “O Brasil dividido”: os mesmos dados oficiais por município, com 2022, renda e incerteza. Cada ponto é uma cidade, não um eleitor.">
+<meta property="og:title" content="Cidade não vota. Gente vota.">
+<meta property="og:description" content="Em 2022, com o Auxílio Brasil do governo Bolsonaro, o mapa era o mesmo. Dados oficiais por município: TSE, MDS, IBGE.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://eleicoes.danielumpierre.com/">
+<meta name="theme-color" content="#0e0f14">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230e0f14'/%3E%3Ccircle cx='11' cy='16' r='6' fill='%23ec6d5d'/%3E%3Ccircle cx='21' cy='16' r='6' fill='%235aa5fb'/%3E%3C/svg%3E">
+<style>
+/*__FONTES__*/
+/*__CSS__*/
+</style>
+</head>
+<body>
+<a class="pular" href="#painel">Pular para o painel</a>
+<header class="topo">
+  <div class="topo-in">
+    <a class="marca" href="#">Cidade não vota. <span>Gente vota.</span></a>
+    <nav aria-label="Seções"><a href="#painel">Painel</a><a href="#estados">Estados</a><a href="#metodo">Método</a></nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" aria-labelledby="titulo">
+  <p class="kicker">Eleições 2026 · Presidente · 1º turno · dados por município</p>
+  <h1 id="titulo">Cidade não vota.<br><span>Gente vota.</span></h1>
+  <p class="sub">Uma resposta, painel por painel, ao site <a href="https://eleicoes.tonycelestino.com/2026/" rel="noopener">“O Brasil dividido”</a>. Os números de lá estão certos. Mas está errado interpretar as mudanças como efeito do Bolsa Família. Em 2022, com o Auxílio Brasil do governo Bolsonaro, o mapa era o mesmo.</p>
+  <div class="placar" role="group" aria-label="Resultado nacional do 1º turno de 2026">
+    <div><span class="rot"><i class="pt pl"></i>Flávio</span><span class="v c-pl">{{flavio_pct}}</span></div>
+    <div><span class="rot"><i class="pt lula"></i>Lula</span><span class="v c-lula">{{lula_pct}}</span></div>
+    <div><span class="rot">Diferença</span><span class="v">{{dif_mi}}</span></div>
+  </div>
+  <p class="reconhece">Lula perdeu <b>{{lula_perda_mi}}</b> de votos desde 2022, e a fatia dele caiu em <b>{{pct_cid_lula_caiu}}</b> das cidades. Isso é real e está nos dados. A pergunta é o que mais os dados permitem dizer.</p>
+  <p class="fonte">TSE, 1º turno 2026 (100% das seções, Brasil e exterior) e 2022.</p>
+  <a class="botao" href="#painel" data-foco-busca>Buscar minha cidade ↓</a>
+</section>
+
+<section id="painel" class="painel" aria-label="Painel por município">
+  <div class="controles">
+    <div class="busca" role="search">
+      <label for="q" class="vh">Buscar cidade</label>
+      <input id="q" type="search" placeholder="Busque sua cidade…" autocomplete="off" role="combobox" aria-expanded="false" aria-controls="sugestoes" aria-autocomplete="list">
+      <ul id="sugestoes" role="listbox" hidden></ul>
+    </div>
+    <div class="lentes" role="tablist" aria-label="Painéis">
+      <button role="tab" id="t-mapa" aria-controls="p-graf" data-lente="mapa" aria-selected="true">Mapa</button>
+      <button role="tab" id="t-divisao" aria-controls="p-graf" data-lente="divisao" aria-selected="false" tabindex="-1">A divisão</button>
+      <button role="tab" id="t-bf" aria-controls="p-graf" data-lente="bf" aria-selected="false" tabindex="-1">Bolsa Família</button>
+      <button role="tab" id="t-renda" aria-controls="p-graf" data-lente="renda" aria-selected="false" tabindex="-1">Renda</button>
+      <button role="tab" id="t-ev" aria-controls="p-graf" data-lente="ev" aria-selected="false" tabindex="-1">Evangélicos</button>
+      <button role="tab" id="t-d22" aria-controls="p-graf" data-lente="d22" aria-selected="false" tabindex="-1">2022 → 2026</button>
+      <button role="tab" id="t-ab22" aria-controls="p-graf" data-lente="ab22" aria-selected="false" tabindex="-1" class="novo">2022: Auxílio Brasil</button>
+      <button role="tab" id="t-ajuste" aria-controls="p-graf" data-lente="ajuste" aria-selected="false" tabindex="-1" class="novo">O que os dados não dizem</button>
+    </div>
+  </div>
+
+  <div class="palco">
+    <div class="graf" id="p-graf" role="tabpanel" aria-labelledby="t-mapa">
+
+      <div class="lente-texto" data-lente="mapa">
+        <h2>O mapa de 2026 e o de 2022</h2>
+        <p><b>{{viradas}}</b> cidades em que Lula venceu em 2022 deram a vitória a Flávio em 2026; <b>{{viradas_inv}}</b> fizeram o caminho contrário.</p>
+        <p>Troque o ano: o desenho é quase o mesmo. Entre as cidades, a margem de 2026 acompanha a de 2022 (correlação de {{r_m22_m26}}). A divisão regional já estava lá.</p>
+      </div>
+      <div class="lente-texto" data-lente="divisao" hidden>
+        <h2>Contar cidades exagera a distância</h2>
+        <p>Contando cidades, {{pct_cid_perto}} ({{n_cid_perto}}) ficaram a menos de {{lim_empate}} pontos do empate. Contando votos válidos, foram {{pct_vot_perto}}.</p>
+      </div>
+      <div class="lente-texto" data-lente="bf" hidden>
+        <h2>Cidades com mais Bolsa Família: mais Lula</h2>
+        <p>Nas cidades que reúnem os {{ponta}} do eleitorado com mais Bolsa Família (a partir de {{bf_d10_lula_lim}} da população no programa), Lula teve <b>{{bf_d10_lula}}</b> dos votos válidos. Na ponta oposta (até {{bf_d1_flavio_lim}}), Flávio teve <b>{{bf_d1_flavio}}</b>.</p>
+      </div>
+      <div class="lente-texto" data-lente="renda" hidden>
+        <h2>Renda: a relação não é uma reta</h2>
+        <p>Nas cidades que reúnem os {{ponta}} do eleitorado de menor renda (média até {{renda_d1_lula_lim}} por pessoa), Lula teve <b>{{renda_d1_lula}}</b>. Nos {{ponta}} de maior renda (a partir de {{renda_d10_flavio_lim}}), Flávio teve <b>{{renda_d10_flavio}}</b>.</p>
+      </div>
+      <div class="lente-texto" data-lente="ev" hidden>
+        <h2>Evangélicos: uma associação mais fraca</h2>
+        <p>Nas cidades que reúnem os {{ponta}} do eleitorado com menos evangélicos (até {{ev_d1_lula_lim}} da população), Lula teve <b>{{ev_d1_lula}}</b>. Nos {{ponta}} com mais (a partir de {{ev_d10_flavio_lim}}), Flávio teve <b>{{ev_d10_flavio}}</b>.</p>
+      </div>
+      <div class="lente-texto" data-lente="d22" hidden>
+        <h2>De 2022 para 2026, quase todo o país andou na mesma direção</h2>
+        <p>Acima da diagonal, a cidade andou para o PL: {{pct_andou_pl}} delas. A margem nacional andou {{desloc_nac}}. Lula perdeu {{lula_perda_mi}} de votos e a fatia dele caiu em {{pct_cid_lula_caiu}} das cidades e em {{n_uf_lula_caiu}} de {{n_uf}} estados.</p>
+      </div>
+      <div class="lente-texto" data-lente="ab22" hidden>
+        <h2>Em 2022, o programa era do governo Bolsonaro</h2>
+        <p>O Auxílio Brasil foi ampliado a menos de três meses da eleição. A Emenda Constitucional 123/2022 liberou <b>{{ec_total}}</b> fora do teto de gastos, inclusive {{ec_I_mensal}} a mais por mês para cada família do programa.</p>
+        <p>O desenho foi o mesmo de 2026. No quinto de cidades com menos beneficiários, Bolsonaro teve <b class="c-pl">{{q22_1_bolsonaro}}</b> e Lula {{q22_1_lula}}. No quinto com mais, Lula teve <b class="c-lula">{{q22_5_lula}}</b> e Bolsonaro {{q22_5_bolsonaro}}.</p>
+      </div>
+      <div class="lente-texto" data-lente="ajuste" hidden>
+        <h2>O que os dados não dizem</h2>
+        <p>Comparamos cidades com muito e com pouco programa (percentis 90 e 10), primeiro só dentro do mesmo estado e depois entre cidades parecidas em renda, alfabetização, religião, urbanização e idade.</p>
+        <p>A diferença de margem cai {{red26}} em 2026 (de {{a26}} para {{aj26}} pontos) e {{red22}} em 2022 (de {{a22}} para {{aj22}}). Diminui, mas não some. E é quase a mesma com o programa de Bolsonaro e com o de Lula.</p>
+      </div>
+
+      <div class="alternar" data-para="mapa" role="group" aria-label="Ano do mapa">
+        <button data-v="26" aria-pressed="true">2026 · Lula × Flávio</button><button data-v="22" aria-pressed="false">2022 · Lula × Bolsonaro</button>
+      </div>
+      <div class="alternar" data-para="divisao" role="group" aria-label="Unidade do histograma" hidden>
+        <button data-v="cid" aria-pressed="true">Contar cidades</button><button data-v="vot" aria-pressed="false">Contar votos válidos</button>
+      </div>
+      <div class="alternar" data-para="bf" role="group" aria-label="Eixo horizontal" hidden>
+        <button data-v="bf" aria-pressed="true">% no Bolsa Família</button><button data-v="rd" aria-pressed="false">Renda média por pessoa</button>
+      </div>
+      <div class="alternar" data-para="ab22" role="group" aria-label="Ano do programa" hidden>
+        <button data-v="22" aria-pressed="true">2022 · Auxílio Brasil</button><button data-v="26" aria-pressed="false">2026 · Bolsa Família</button>
+      </div>
+
+      <div class="canvas-caixa">
+        <canvas id="cv" role="img" aria-label="Mapa de pontos: cada ponto é um município, colorido pela margem de 2026."></canvas>
+        <div class="dica" id="dica" hidden></div>
+        <div class="contrastes" data-lente="ajuste" hidden>
+          <p class="ct-tit">Diferença de margem (PL − Lula, pontos) entre cidades com muito e com pouco programa, com intervalo de confiança de 95%</p>
+          {{!contrastes}}
+          <div class="ct-eixo" aria-hidden="true"></div>
+          <p class="sec pequeno">Valores negativos: margem mais favorável a Lula nas cidades com mais programa. Faixas com erro agrupado por estado, a forma mais conservadora; elas são largas porque cidades do mesmo estado se parecem.</p>
+        </div>
+      </div>
+      <p class="ressalva"><b>Cada ponto é uma cidade, não um eleitor.</b> <span id="legenda-lente">Cor: margem em 2026 (vermelho, Lula; azul, Flávio). Tamanho: eleitorado.</span></p>
+      <p class="fonte" id="fonte-lente">TSE, 1º turno 2022 e 2026.</p>
+      <div class="lente-mais" data-lente="divisao" hidden>
+        <p>Metade das cidades ({{pct_cid_10k}}) tem menos de {{lim_peq}} mil eleitores e soma {{pct_vot_10k}} dos votos válidos. No histograma por cidade, cada uma vale um ponto, igual a São Paulo. Troque para votos e os “dois morros” ficam menos separados.</p>
+      </div>
+      <div class="lente-mais" data-lente="bf" hidden>
+        <p>Entre as cidades, Bolsa Família e renda andam juntos: correlação de <b>{{r_renda_bf}}</b>. Troque o eixo para a renda e o desenho quase não muda.</p>
+        <p class="nota">Isso não quer dizer que o programa seja só um retrato da renda: com dados por cidade não dá para separar um do outro (veja “O que os dados não dizem”). {{n_bf80}} cidades passam de {{lim_bf_alto}} e {{n_bf100}} passa de {{lim_bf_max}} (máximo de {{bf_max}}), porque as pessoas no programa vêm do CadÚnico de set/2026 e a população vem do Censo 2022. O eixo vai até o fim, sem esconder essas cidades.</p>
+      </div>
+      <div class="lente-mais" data-lente="renda" hidden>
+        <p>A curva mostra a margem esperada para cada nível de renda. A vantagem de Flávio é maior perto de {{renda_pico}} por pessoa ({{renda_pico_m}} pontos) e diminui nas cidades mais ricas ({{renda_fim_m}} no fim da curva). Separar “cidades pobres” e “cidades ricas” em dois grupos esconde essa curva.</p>
+      </div>
+      <div class="lente-mais" data-lente="ev" hidden>
+        <p>A nuvem é larga: a correlação com a margem é de {{r_ev26}}, contra {{r_bf26}} para o Bolsa Família e {{r_renda26}} para a renda. O dado da cidade não diz nada sobre o voto de cada pessoa evangélica.</p>
+      </div>
+      <div class="lente-mais" data-lente="d22" hidden>
+        <p>Os pontos ficam colados à diagonal: a ordem das cidades quase não mudou (correlação de {{r_m22_m26}}). Mudou o nível, e mudou também nas cidades com mais Bolsa Família: no quinto de cidades com mais beneficiários, {{pct_andou_q5}} andaram para o PL.</p>
+      </div>
+      <div class="lente-mais" data-lente="ab22" hidden>
+        <p>Correlação entre a % da população no programa e a margem: {{r_ab22}} em 2022 e {{r_bf26}} em 2026. Se benefício comprasse voto, essas cidades teriam ido para Bolsonaro em 2022.</p>
+      </div>
+
+      <div class="extra" data-lente="divisao" hidden>
+        <h3>Exemplo ilustrativo: duas cidades de 100 pessoas</h3>
+        <p>Nas duas, {{ex_recebe}} pessoas recebem o benefício e {{ex_lula}} votam em Lula, os números de Bonfim do Piauí ({{bonfim_bf}} e {{bonfim_lula}}) arredondados. Na primeira, todas as que recebem votam em Lula. Na segunda, os {{ex_outros}} votos que não foram para Lula vêm de quem recebe. No gráfico, as duas cidades são o mesmo ponto. O dado da cidade não diz qual das duas é a verdadeira.</p>
+        <div class="ilustra" data-recebe="{{ex_recebe}}" data-lula="{{ex_lula}}" data-ilustrativo>
+          <figure><svg data-caso="1" viewBox="0 0 100 100" role="img" aria-label="Cidade 1 do exemplo"></svg><figcaption>Cidade 1</figcaption></figure>
+          <figure><svg data-caso="2" viewBox="0 0 100 100" role="img" aria-label="Cidade 2 do exemplo"></svg><figcaption>Cidade 2</figcaption></figure>
+          <p class="leg-ilustra"><span><i class="q q-lula"></i>vota em Lula</span><span><i class="q q-out"></i>outro voto</span><span><i class="q q-rec"></i>recebe o benefício</span></p>
+        </div>
+      </div>
+
+      <div class="extra" data-lente="ab22" hidden>
+        <h3>Votos por quinto de cidades, do menor ao maior % da população no programa</h3>
+        <div class="tabela-rolar">
+        <table class="quintis">
+          <thead><tr><th scope="col">Quinto</th><th scope="col">2022: % no Auxílio Brasil</th><th scope="col">Lula × Bolsonaro</th><th scope="col">2026: % no Bolsa Família</th><th scope="col">Lula × Flávio</th></tr></thead>
+          <tbody>
+          {{!quintis}}
+          </tbody>
+        </table>
+        </div>
+        <p class="sec pequeno">Cada quinto tem o mesmo número de cidades; votos somados dentro do quinto.</p>
+        <h3>O pacote de 2022 (EC 123/2022, art. 5º)</h3>
+        <blockquote class="manchete"><p>“Governo Bolsonaro pagará R$ 12,6 bi em benefícios até eleição”</p><cite>Título do Poder360, 3.ago.2022 (<a href="https://www.poder360.com.br/eleicoes/governo-bolsonaro-pagara-r-126-bi-em-beneficios-ate-eleicao/" rel="noopener">matéria</a>)</cite></blockquote>
+        <div class="ec" role="list" aria-label="Limites de despesa da EC 123/2022 por medida">
+          {{!ec_barras}}
+        </div>
+        <p class="ec-total">Total: <b>{{ec_total}}</b>, fora do teto de gastos (art. 120 do ADCT, incluído pela EC 123/2022).</p>
+      </div>
+
+      <div class="extra" data-lente="ajuste" hidden>
+        <h3>Com dados por cidade, não dá para saber</h3>
+        <ul class="nao-diz">
+          <li>como votou quem recebe o benefício;</li>
+          <li>se o benefício mudou o voto de alguém;</li>
+          <li>se a associação vem do programa ou da pobreza que ele atende: as duas medidas andam juntas entre as cidades (correlação de {{r_renda_bf}} com a renda).</li>
+        </ul>
+        <p>O que os dados dizem: o mesmo desenho aparece com o programa de um governo e com o do outro. Uma explicação do tipo “quem recebe retribui a quem paga” previa o contrário em 2022.</p>
+      </div>
+    </div>
+
+    <aside class="ficha" id="ficha" aria-live="polite">
+      <div id="ficha-brasil">
+        <p class="kicker">Brasil · 1º turno 2026</p>
+        <div class="barra-res" aria-hidden="true" data-l="{{lula_pct}}" data-f="{{flavio_pct}}"><i class="b-lula"></i><i class="b-out"></i><i class="b-pl"></i></div>
+        <div class="res2"><span class="c-lula grande">{{lula_pct}}</span><span class="c-pl grande">{{flavio_pct}}</span></div>
+        <div class="res2 sec"><span>Lula</span><span>Flávio</span></div>
+        <ul class="fatos">
+          <li>Lula perdeu {{lula_perda_mi}} de votos desde 2022.</li>
+          <li>{{viradas}} cidades viraram para Flávio; {{viradas_inv}} para Lula.</li>
+          <li>Em 2022, o mapa era quase o mesmo (correlação de {{r_m22_m26}}).</li>
+        </ul>
+        <p class="sec">Busque ou toque num ponto para ver uma cidade.</p>
+      </div>
+      <div id="ficha-cidade" hidden></div>
+    </aside>
+  </div>
+</section>
+
+<section id="estados" class="estados" aria-labelledby="t-estados">
+  <h2 id="t-estados">Os {{n_uf}} estados</h2>
+  <p class="sec">Margem em pontos dos votos válidos. Barra: 2026; traço: 2022. Viradas: cidades em que Lula venceu em 2022 e Flávio em 2026. L: Lula; F: Flávio; B: Bolsonaro.</p>
+  <div class="tabela-rolar">
+  <table class="tab-uf">
+    <thead><tr><th scope="col">Estado</th><th scope="col"><span class="vh">Barra</span></th><th scope="col">2026</th><th scope="col">2022</th><th scope="col">Viradas</th></tr></thead>
+    <tbody>
+{{!uf_lista}}
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<section id="metodo" class="metodo" aria-labelledby="t-metodo">
+  <h2 id="t-metodo">Método e fontes</h2>
+  <div class="cols">
+    <div>
+      <h3>Como ler</h3>
+      <p>Todos os dados são por município. Mostram como votaram as cidades, não cada eleitor. Margem é Flávio (Bolsonaro, em 2022) menos Lula, em pontos percentuais dos votos válidos, no 1º turno dos dois anos.</p>
+      <p>% no programa: pessoas em famílias beneficiárias (Auxílio Brasil em set/2022, Bolsa Família em set/2026) divididas pela população do Censo 2022. As contagens dos dois anos foram conferidas como comparáveis.</p>
+      <p>“{{ponta}} do eleitorado”: cidades ordenadas pela variável até somar essa fatia do eleitorado de 2026, votos somados. É o mesmo corte do site original, que não o informa. Quintos: mesmo número de cidades em cada grupo.</p>
+      <p>Correlações ponderadas pelo eleitorado (as de Bolsa Família com renda e de 2022 com 2026 para o programa, sem peso). Curva de renda: spline cúbica restrita com cinco nós, ponderada por votos válidos, descritiva.</p>
+      <p>Comparação entre cidades parecidas: regressão linear ponderada por votos válidos, com splines para o programa, renda mediana, alfabetização, evangélicos, população urbana e 60 anos ou mais, e efeito de estado. Diferença entre os percentis 90 e 10 do programa; intervalo de 95% com erro agrupado por estado. Análise exploratória, plano escrito antes do modelo.</p>
+      <p>O mapa e os gráficos têm {{n_mapa}} municípios: Boa Esperança do Norte (MT), criado depois de 2022, não tem resultado de 2022, Censo nem malha. Ele entra no resultado nacional.</p>
+    </div>
+    <div>
+      <h3>Fontes</h3>
+      <ul class="fontes">
+        <li>TSE, resultados do 1º turno de 2026 (Presidente, 100% das seções), <a href="https://resultados.tse.jus.br/" rel="noopener">resultados.tse.jus.br</a>, totalização de 05/10/2026.</li>
+        <li>TSE, dados abertos, votação por município e zona, 2022, <a href="https://dadosabertos.tse.jus.br/" rel="noopener">dadosabertos.tse.jus.br</a>.</li>
+        <li>MDS, MI Social, Auxílio Brasil (set/2022) e Bolsa Família (set/2026), <a href="https://aplicacoes.mds.gov.br/sagi/servicos/misocial" rel="noopener">aplicacoes.mds.gov.br</a>.</li>
+        <li>IBGE, Censo 2022: renda domiciliar per capita, religião, alfabetização, população urbana e por idade (<a href="https://sidra.ibge.gov.br/" rel="noopener">SIDRA</a>); malhas e localidades (<a href="https://servicodados.ibge.gov.br/" rel="noopener">servicodados.ibge.gov.br</a>).</li>
+        <li>Emenda Constitucional 123/2022, <a href="https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc123.htm" rel="noopener">planalto.gov.br</a>.</li>
+        <li>Poder360, 3.ago.2022, citado só pelo título.</li>
+        <li>Site comentado: “O Brasil dividido”, Tony Celestino, <a href="https://eleicoes.tonycelestino.com/2026/" rel="noopener">eleicoes.tonycelestino.com/2026</a>. Fontes acessadas em 07/10/2026.</li>
+      </ul>
+      <h3>Dados e código</h3>
+      <p>Base por município usada na página: <a href="dados.json" download>dados.json</a>, com dicionário dos campos. Código, scripts e registro de cada número: <a href="https://github.com/dumpierre/eleicoes" rel="noopener">github.com/dumpierre/eleicoes</a>.</p>
+      <h3>Privacidade</h3>
+      <p>Sem cookies, sem rastreadores, sem coleta de dados. Nada sai do seu navegador.</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="rodape">
+  <p><b>Análise:</b> Daniel Umpierre · <b>Desenvolvimento:</b> Claude Opus 5.5 (outubro, 2026)</p>
+  <p class="redes"><a href="https://danielumpierre.com/" rel="me">danielumpierre.com</a> · <a href="https://www.instagram.com/daniel.umpierre/" rel="me noopener">Instagram</a> · <a href="https://www.youtube.com/@DanielUmpierre" rel="me noopener">YouTube</a></p>
+  <p class="sec">Site feito com inteligência artificial, com plano e revisão humana. Não é peça de campanha.</p>
+</footer>
+
+<script id="dados" type="application/json">/*__DADOS__*/</script>
+<script>
+/*__APP__*/
+</script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+{
+ "fonte": "data\\raw\\fontes_beneficios_2022\\emc123_planalto.htm",
+ "promulgacao": "2022-07-14",
+ "linhas": [
+  {
+   "inciso": "I",
+   "rotulo": "Auxílio Brasil",
+   "limite_reais": 26000000000,
+   "mensal_reais": 200,
+   "trecho": "assegurará a extensão do Programa Auxílio Brasil, de que trata a Lei nº 14.284, de 29 de dezembro de 2021, às famílias elegíveis na data de promulgação desta Em"
+  },
+  {
+   "inciso": "III",
+   "rotulo": "Auxílio caminhoneiro",
+   "limite_reais": 5400000000,
+   "mensal_reais": 1000,
+   "trecho": "concederá, entre 1º de julho e 31 de dezembro de 2022, aos Transportadores Autônomos de Cargas devidamente cadastrados no Registro Nacional de Transportadores R"
+  },
+  {
+   "inciso": "V",
+   "rotulo": "Etanol (ajuda aos estados)",
+   "limite_reais": 3800000000,
+   "mensal_reais": "",
+   "trecho": "entregará na forma de auxílio financeiro o valor de até R$ 3.800.000.000,00 (três bilhões e oitocentos milhões de reais), em 5 (cinco) parcelas mensais no valor"
+  },
+  {
+   "inciso": "IV",
+   "rotulo": "Transporte grátis de idosos",
+   "limite_reais": 2500000000,
+   "mensal_reais": "",
+   "trecho": "aportará à União, aos Estados, ao Distrito Federal e aos Municípios que dispõem de serviços regulares em operação de transporte público coletivo urbano, semiurb"
+  },
+  {
+   "inciso": "VI",
+   "rotulo": "Auxílio taxista",
+   "limite_reais": 2000000000,
+   "mensal_reais": "",
+   "trecho": "concederá, entre 1º de julho e 31 de dezembro de 2022, aos motoristas de táxi devidamente registrados até 31 de maio de 2022, auxílio até o limite de R$ 2.000.0"
+  },
+  {
+   "inciso": "II",
+   "rotulo": "Auxílio Gás",
+   "limite_reais": 1050000000,
+   "mensal_reais": "",
+   "trecho": "assegurará às famílias beneficiadas pelo auxílio Gás dos Brasileiros, de que trata a Lei nº 14.237, de 19 de novembro de 2021 , a cada bimestre, entre 1º de jul"
+  },
+  {
+   "inciso": "VII",
+   "rotulo": "Alimenta Brasil",
+   "limite_reais": 500000000,
+   "mensal_reais": "",
+   "trecho": "assegurará ao Programa Alimenta Brasil, de que trata a Lei nº 14.284, de 29 de dezembro de 2021 , a suplementação orçamentária de R$ 500.000.000,00 (quinhentos "
+  }
+ ],
+ "total": 41250000000,
+ "teto": "art. 120, par. único, I, b, ADCT: despesas não consideradas no limite do art. 107 do ADCT"
+}

@@ -1,0 +1,98 @@
+municípios: 5570 
+
+=== Emendas a entes municipais (R$ per capita, jan/23-set/26) por quintil de margem PL 2022 ===
+  qm22  margem_22 emendas_municipal_pc emendas_municipal_ind_PL_pc emendas_municipal_ind_esquerda_pc pop_total
+1   Q1 -63.735050            1036.9747                     0.00000                          62.87447   11362.5
+2   Q2 -40.726263             881.1179                    15.64435                          52.99330   11729.5
+3   Q3 -11.551521             813.5895                    38.05700                          56.77300    8255.5
+4   Q4   9.250097             628.0712                    52.53375                          45.73040   10730.0
+5   Q5  30.819589             603.7265                    60.70790                          30.01343   14030.5
+
+=== Deslocamento 2022->2026 (pontos, mediana) por quintil de emendas per capita ===
+  qe emendas_municipal_pc delta_margem  margem_22 pop_total
+1 Q1             240.1761     9.510997   7.110482   37364.0
+2 Q2             505.2035    11.430900  -8.350660   16377.0
+3 Q3             785.9178    11.883675 -13.934721   10384.5
+4 Q4            1185.5629    11.593014 -21.393057    7259.0
+5 Q5            2168.8927    11.312309 -28.181086    4615.5
+
+Correlação de Spearman: emendas pc x log pop = -0.6 ; emendas pc x margem 22 = -0.24 ; emendas pc x delta = 0.11 
+
+=== Contrastes P90 vs P10 ===
+Q1/Q3: diferença em log(1 + R$ pc) entre municípios no P90 e no P10 da margem PL 2022 (exp(dif) ≈ razão)
+Q2: diferença no deslocamento 2022->2026 (pontos) entre P90 e P10 de log(1 + emendas pc)
+                                            modelo       var    p10   p90  ep   dif    li    ls
+           Q1a aloc: emendas ~ margem22 + pop + UF margem_22 -63.72 30.82 rob -0.16 -0.25 -0.07
+           Q1a aloc: emendas ~ margem22 + pop + UF margem_22 -63.72 30.82 clu -0.16 -0.36  0.04
+                                 Q1b aloc: + Censo margem_22 -63.72 30.82 rob  0.01 -0.09  0.11
+                                 Q1b aloc: + Censo margem_22 -63.72 30.82 clu  0.01 -0.18  0.20
+                                  Q1 sens: sem pop margem_22 -63.72 30.82 rob -0.81 -0.91 -0.70
+                                  Q1 sens: sem pop margem_22 -63.72 30.82 clu -0.81 -1.10 -0.51
+                        Q1 sens: ponderado por pop margem_22 -63.72 30.82 rob -0.47 -0.59 -0.36
+                        Q1 sens: ponderado por pop margem_22 -63.72 30.82 clu -0.47 -1.04  0.09
+                        Q1 sens: todos favorecidos margem_22 -63.72 30.82 rob -0.15 -0.23 -0.06
+                        Q1 sens: todos favorecidos margem_22 -63.72 30.82 clu -0.15 -0.33  0.04
+                           Q1 sens: só individuais margem_22 -63.72 30.82 rob -0.20 -0.29 -0.11
+                           Q1 sens: só individuais margem_22 -63.72 30.82 clu -0.20 -0.41  0.01
+              Q1 sens: só bancada/comissão/relator margem_22 -63.72 30.82 rob -0.13 -0.28  0.02
+              Q1 sens: só bancada/comissão/relator margem_22 -63.72 30.82 clu -0.13 -0.43  0.17
+                  Q3: individuais de autores do PL margem_22 -63.72 30.82 rob  0.97  0.70  1.25
+                  Q3: individuais de autores do PL margem_22 -63.72 30.82 clu  0.97  0.50  1.45
+     Q3: individuais PT/PCdoB/PV/PSOL/Rede/PSB/PDT margem_22 -63.72 30.82 rob -1.00 -1.26 -0.74
+     Q3: individuais PT/PCdoB/PV/PSOL/Rede/PSB/PDT margem_22 -63.72 30.82 clu -1.00 -1.48 -0.51
+                   Q3: individuais demais partidos margem_22 -63.72 30.82 rob -0.11 -0.25  0.03
+                   Q3: individuais demais partidos margem_22 -63.72 30.82 clu -0.11 -0.37  0.15
+ Q2a efeito: delta ~ emendas + margem22 + pop + UF        le   5.49  7.68 rob  0.32 -0.32  0.96
+ Q2a efeito: delta ~ emendas + margem22 + pop + UF        le   5.49  7.68 clu  0.32 -0.71  1.35
+                               Q2b efeito: + Censo        le   5.49  7.68 rob  0.18 -0.38  0.74
+                               Q2b efeito: + Censo        le   5.49  7.68 clu  0.18 -0.68  1.04
+                                 Q2 sens: sem peso        le   5.49  7.68 rob -0.37 -0.84  0.09
+                                 Q2 sens: sem peso        le   5.49  7.68 clu -0.37 -0.97  0.22
+                        Q2 sens: todos favorecidos  le_todos   5.60  7.70 rob -0.29 -0.78  0.19
+                        Q2 sens: todos favorecidos  le_todos   5.60  7.70 clu -0.29 -1.05  0.47
+                             Q2: individuais do PL     le_pl   0.00  5.74 rob  0.36 -0.12  0.83
+                             Q2: individuais do PL     le_pl   0.00  5.74 clu  0.36 -0.22  0.93
+                          Q2: individuais esquerda    le_esq   0.00  5.85 rob -0.08 -0.62  0.47
+                          Q2: individuais esquerda    le_esq   0.00  5.85 clu -0.08 -1.11  0.96
+
+R2:
+        Q1a.R2         Q1b.R2   Q1_semPop.R2 Q1_pop_pond.R2    Q1_todos.R2      Q1_ind.R2      Q1_col.R2       Q3_PL.R2      Q3_esq.R2      Q3_dem.R2         Q2a.R2 
+         0.637          0.645          0.328          0.820          0.588          0.591          0.380          0.355          0.288          0.394          0.593 
+        Q2b.R2 Q2b_sempeso.R2    Q2_todos.R2       Q2_PL.R2      Q2_esq.R2 
+         0.675          0.532          0.675          0.676          0.677 
+
+Anova robusta Q1a e Q2b (chi2 - gl):
+-- Q1a 
+                     chi2   gl   chi2_gl
+margem_22            17.7    3      14.7
+ Nonlinear            9.4    2       7.4
+log_pop            3323.5    3    3320.5
+ Nonlinear           14.1    2      12.1
+uf                 7031.5   26    7005.5
+TOTAL NONLINEAR      25.3    4      21.3
+TOTAL           1099795.7   32 1099763.7
+ERROR                  NA 5537        NA
+-- Q2b 
+                          chi2   gl   chi2_gl
+le                        33.1    3      30.1
+ Nonlinear                12.0    2      10.0
+margem_22                619.3    3     616.3
+ Nonlinear               354.5    2     352.5
+log_pop                 1528.2    3    1525.2
+ Nonlinear                 0.6    2      -1.4
+uf                      6223.0   26    6197.0
+log_renda                428.5    3     425.5
+ Nonlinear               417.9    2     415.9
+pct_evangelicas          152.0    2     150.0
+ Nonlinear                25.1    1      24.1
+pct_urbana               158.0    2     156.0
+ Nonlinear                36.5    1      35.5
+pct_60mais               927.7    2     925.7
+ Nonlinear                 7.8    1       6.8
+alfabetizacao_15mais      95.5    2      93.5
+ Nonlinear                39.8    1      38.8
+TOTAL NONLINEAR         1604.5   12    1592.5
+TOTAL                1725352.1   46 1725306.1
+ERROR                       NA 5523        NA
+null device 
+          1 

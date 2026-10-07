@@ -1,0 +1,63 @@
+{
+  "campos": [
+    "anomes_s",
+    "codigo_ibge",
+    "populacao_censo_2022_i",
+    "cadunico_tot_pes_pbf_i",
+    "qtd_pessoas_beneficiarias_bolsa_familia_i",
+    "qtd_familias_beneficiarias_bolsa_familia_i"
+  ],
+  "meses": {
+    "202303": {
+      "n_municipios": 5570,
+      "total_cadunico_tot_pes_pbf": 54339533,
+      "total_qtd_pessoas_benef": 54308193,
+      "razao_totais": 1.0006,
+      "razao_municipal_p5_p50_p95": [
+        0.987,
+        1.0,
+        1.029
+      ],
+      "dif_pct_pop_pontos_p5_p50_p95": [
+        -0.41,
+        0.0,
+        0.47
+      ],
+      "correlacao_pct_pop": 0.9999
+    },
+    "202306": {
+      "n_municipios": 5570,
+      "total_cadunico_tot_pes_pbf": 54308900,
+      "total_qtd_pessoas_benef": 54606332,
+      "razao_totais": 0.9946,
+      "razao_municipal_p5_p50_p95": [
+        0.971,
+        0.998,
+        1.051
+      ],
+      "dif_pct_pop_pontos_p5_p50_p95": [
+        -1.07,
+        -0.07,
+        0.99
+      ],
+      "correlacao_pct_pop": 0.9995
+    },
+    "202312": {
+      "n_municipios": 5570,
+      "total_cadunico_tot_pes_pbf": 55777848,
+      "total_qtd_pessoas_benef": 55742366,
+      "razao_totais": 1.0006,
+      "razao_municipal_p5_p50_p95": [
+        0.986,
+        1.0,
+        1.014
+      ],
+      "dif_pct_pop_pontos_p5_p50_p95": [
+        -0.33,
+        -0.01,
+        0.33
+      ],
+      "correlacao_pct_pop": 0.9999
+    }
+  }
+}

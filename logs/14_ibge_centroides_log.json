@@ -1,0 +1,24 @@
+{
+  "executado_em": "2026-10-07T11:25:45+00:00",
+  "url": "https://servicodados.ibge.gov.br/api/v3/malhas/paises/BR/metadados?intrarregiao=municipio",
+  "baixado_agora": false,
+  "sha256": "2ce2914973e5b464ca1c6faa159b4c35e613de01b586a67b5707200759b2bfdd",
+  "n_centroides": 5570,
+  "n_base": 5571,
+  "base_sem_centroide": [
+    {
+      "cd_ibge7": 5101837,
+      "nome_tse": "BOA ESPERANÇA DO NORTE",
+      "uf": "MT"
+    }
+  ],
+  "centroide_fora_da_base": [],
+  "lon_min_max": [
+    -73.4391,
+    -32.4265
+  ],
+  "lat_min_max": [
+    -33.6525,
+    4.6854
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "municipios_2026": 5571,
+  "municipios_com_2022": 5570,
+  "municipios_tse2022_sem_par_2026": 0,
+  "sem_2022": [
+    [
+      "MT",
+      "BOA ESPERANÇA DO NORTE"
+    ]
+  ],
+  "viradas_lula_para_flavio": 711,
+  "viradas_bolsonaro_para_lula": 0,
+  "empates_22": 3,
+  "empates_26": 2,
+  "viradas_por_uf": {
+    "AC": 1,
+    "AL": 8,
+    "AM": 4,
+    "AP": 1,
+    "BA": 2,
+    "CE": 1,
+    "ES": 7,
+    "GO": 69,
+    "MA": 3,
+    "MG": 178,
+    "MS": 15,
+    "MT": 15,
+    "PA": 16,
+    "PR": 91,
+    "RJ": 13,
+    "RN": 1,
+    "RS": 133,
+    "SC": 27,
+    "SP": 89,
+    "TO": 37
+  },
+  "pct_municipios_margem_andou_para_PL": 98.96,
+  "sem_mds": 0,
+  "sem_ab22": 1,
+  "sem_covid": 1,
+  "casos_video": [
+    {
+      "uf": "PI",
+      "nome_tse": "BONFIM DO PIAUÍ",
+      "pct_lula_26": 88.7,
+      "pct_flavio_26": 8.6,
+      "pct_bf_26": 57.1,
+      "pct_ab_22": 62.5
+    },
+    {
+      "uf": "RS",
+      "nome_tse": "NOVA PÁDUA",
+      "pct_lula_26": 7.4,
+      "pct_flavio_26": 87.0,
+      "pct_bf_26": 1.8,
+      "pct_ab_22": 2.6
+    }
+  ]
+}

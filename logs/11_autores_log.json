@@ -1,0 +1,167 @@
+{
+  "autores": 1313,
+  "valor_total_individuais_bi": 87.53,
+  "pct_valor_por_status": {
+    "ambiguo": 0.16,
+    "ok": 98.71,
+    "sem_par": 1.13
+  },
+  "sem_par_maiores": [
+    [
+      "BEBETO",
+      97.4,
+      "ambiguo"
+    ],
+    [
+      "MARIANA CARVALHO",
+      43.1,
+      "ambiguo"
+    ],
+    [
+      "DEP. ROSEANA SARNEY",
+      37.9,
+      "sem_par"
+    ],
+    [
+      "DEP. JOSIVALDO JP",
+      37.9,
+      "sem_par"
+    ],
+    [
+      "JOAO CURY NETO (EX-PARLAMENTAR ALBERTO MOURAO, NOS TERMOS ART. 78 LDO 2025 E DA MENSAGEM 95-CN, DE 06.11.25)",
+      37.3,
+      "sem_par"
+    ],
+    [
+      "RIBAMAR ANTONIO DA SILVA (EX-PARLAMENTAR RICARDO SILVA, NOS TERMOS ART. 78 LDO 2025 E DA MENSAGEM 95-CN, DE 06.11.25)",
+      37.2,
+      "sem_par"
+    ],
+    [
+      "Sem informação",
+      37.0,
+      "sem_par"
+    ],
+    [
+      "CARLA DICKSON (EX-PARLAMENTAR PAULINHO FREIRE, NOS TERMOS ART. 78 LDO 2025 E DA MENSAGEM 95-CN, DE 06.11.25)",
+      36.9,
+      "sem_par"
+    ],
+    [
+      "RAFAEL BENTO (EX-PARLAMENTAR LEBRAO, NOS TERMOS ART. 78 LDO 2025 E DA MENSAGEM 95-CN, DE 06.11.25)",
+      36.8,
+      "sem_par"
+    ],
+    [
+      "RODRIGO DA ZAELI (EX-PARLAMENTAR ABILIO BRUNINI, NOS TERMOS ART. 78 LDO 2025 E DA MENSAGEM 95-CN, DE 06.11.25)",
+      36.5,
+      "sem_par"
+    ],
+    [
+      "RODRIGO ROLLEMBERG (EX-PARLAMENTAR GILVAN MAXIMO, NOS TERMOS ART. 78 LDO 2025 E DA MENSAGEM 95-CN, DE 06.11.25)",
+      36.2,
+      "sem_par"
+    ],
+    [
+      "TIAGO DIMAS (EX-PARLAMENTAR LAZARO BOTELHO, NOS TERMOS ART. 78 LDO 2025 E DA MENSAGEM 95-CN, DE 06.11.25)",
+      35.4,
+      "sem_par"
+    ],
+    [
+      "MARCIVANIA FLEXA (EX-PARLAMENTAR MARIA GORETH, NOS TERMOS ART. 78 LDO 2025 E DA MENSAGEM 95-CN, DE 06.11.25)",
+      34.8,
+      "sem_par"
+    ],
+    [
+      "ZE ADRIANO (EX-PARLAMENTAR GERLEN DINIZ, NOS TERMOS ART. 78 LDO 2025 E DA MENSAGEM 95-CN, DE 06.11.25)",
+      34.4,
+      "sem_par"
+    ],
+    [
+      "PAULO LEMOS (EX-PARLAMENTAR SILVIA WAIAPI, NOS TERMOS ART. 78 LDO 2025 E DA MENSAGEM 95-CN, DE 06.11.25)",
+      33.4,
+      "sem_par"
+    ],
+    [
+      "GEOVANIA DE SA (EX-PARLAMENTAR CARMEN ZANOTTO, NOS TERMOS ART. 78 LDO 2025 E DA MENSAGEM 95-CN, DE 06.11.25)",
+      32.2,
+      "sem_par"
+    ],
+    [
+      "ANDRE ABDON (EX-PARLAMENTAR SONIZE BARBOSA, NOS TERMOS ART. 78 LDO 2025 E DA MENSAGEM 95-CN, DE 06.11.25)",
+      30.1,
+      "sem_par"
+    ],
+    [
+      "ENFERMEIRA REJANE (EX-PARLAMENTAR WASHINGTON QUAQUA, NOS TERMOS ART. 78 LDO 2025 E DA MENSAGEM 95-CN, DE 06.11.25)",
+      28.6,
+      "sem_par"
+    ],
+    [
+      "DR. FLAVIO (EX-PARLAMENTAR DELEGADO RAMAGEM, NOS TERMOS DA DECISAO ADPF 854, DE 03",
+      27.7,
+      "sem_par"
+    ],
+    [
+      "ALINE GURGEL (EX-PARLAMENTAR JOSE AUGUSTO PUPPIO, NOS TERMOS ART. 78 LDO 2025 E DA MENSAGEM 95-CN, DE 06.11.25)",
+      8.7,
+      "sem_par"
+    ],
+    [
+      "LUIZ DO CARMO",
+      8.1,
+      "sem_par"
+    ],
+    [
+      "MARIA HELENA",
+      8.0,
+      "sem_par"
+    ],
+    [
+      "CHICO DANGELO",
+      8.0,
+      "sem_par"
+    ],
+    [
+      "ROCHA",
+      7.8,
+      "sem_par"
+    ],
+    [
+      "ANGELA PORTELA",
+      6.5,
+      "sem_par"
+    ]
+  ],
+  "valor_por_partido_2023_bi": {
+    "PL": 14.15,
+    "PT": 10.52,
+    "UNIÃO": 9.33,
+    "PSD": 9.24,
+    "PP": 8.24,
+    "MDB": 8.2,
+    "REPUBLICANOS": 5.95,
+    "PDT": 3.16,
+    "PSB": 3.12,
+    "PSDB": 3.04,
+    "PODE": 2.74,
+    "PSOL": 1.14,
+    "PSC": 0.97,
+    "PCdoB": 0.95,
+    "AVANTE": 0.92,
+    "PV": 0.76,
+    "CIDADANIA": 0.63,
+    "SOLIDARIEDADE": 0.6,
+    "PATRIOTA": 0.58,
+    "NOVO": 0.5,
+    "PROS": 0.4,
+    "REDE": 0.36,
+    "PTB": 0.27,
+    "S/Partido": 0.07,
+    "PPS": 0.07,
+    "PMDB": 0.05,
+    "DEM": 0.04,
+    "PR": 0.01,
+    "PPR": 0.0
+  }
+}

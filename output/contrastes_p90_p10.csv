@@ -1,0 +1,17 @@
+"modelo","exposicao","p10","p90","erro_padrao","diff_margem_p90_menos_p10","li","ls"
+"A26: BF + UF","pct_bf_26",8.984,57.117,"rob",-48.1,-50.5,-45.6
+"A26: BF + UF","pct_bf_26",8.984,57.117,"clu",-48.1,-58,-38.1
+"B26: BF + UF + Censo","pct_bf_26",8.984,57.117,"rob",-31.8,-36.3,-27.3
+"B26: BF + UF + Censo","pct_bf_26",8.984,57.117,"clu",-31.8,-44.4,-19.2
+"A22: AB + UF","pct_ab_22",10.367,64.274,"rob",-54.1,-56.4,-51.8
+"A22: AB + UF","pct_ab_22",10.367,64.274,"clu",-54.1,-62.7,-45.5
+"B22: AB + UF + Censo","pct_ab_22",10.367,64.274,"rob",-33.7,-37.8,-29.7
+"B22: AB + UF + Censo","pct_ab_22",10.367,64.274,"clu",-33.7,-43,-24.5
+"R26: renda + UF","log_renda",6.174,7.181,"rob",39.7,37.7,41.7
+"R26: renda + UF","log_renda",6.174,7.181,"clu",39.7,23.3,56.1
+"RB26: renda + UF + BF + Censo","log_renda",6.174,7.181,"rob",32.3,27.5,37.2
+"RB26: renda + UF + BF + Censo","log_renda",6.174,7.181,"clu",32.3,15.9,48.7
+"C22 (expl.): COVID SMR + UF","smr_basica",0.327,1.228,"rob",29.4,26.5,32.4
+"C22 (expl.): COVID SMR + UF","smr_basica",0.327,1.228,"clu",29.4,8.3,50.6
+"CB22 (expl.): COVID SMR + AB + UF + Censo","smr_basica",0.327,1.228,"rob",6.3,3.5,9.2
+"CB22 (expl.): COVID SMR + AB + UF + Censo","smr_basica",0.327,1.228,"clu",6.3,2.4,10.3

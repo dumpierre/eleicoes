@@ -1,0 +1,33 @@
+"modelo","var","p10","p90","ep","dif","li","ls"
+"Q1a aloc: emendas ~ margem22 + pop + UF","margem_22",-63.72,30.82,"rob",-0.16,-0.25,-0.07
+"Q1a aloc: emendas ~ margem22 + pop + UF","margem_22",-63.72,30.82,"clu",-0.16,-0.36,0.04
+"Q1b aloc: + Censo","margem_22",-63.72,30.82,"rob",0.01,-0.09,0.11
+"Q1b aloc: + Censo","margem_22",-63.72,30.82,"clu",0.01,-0.18,0.2
+"Q1 sens: sem pop","margem_22",-63.72,30.82,"rob",-0.81,-0.91,-0.7
+"Q1 sens: sem pop","margem_22",-63.72,30.82,"clu",-0.81,-1.1,-0.51
+"Q1 sens: ponderado por pop","margem_22",-63.72,30.82,"rob",-0.47,-0.59,-0.36
+"Q1 sens: ponderado por pop","margem_22",-63.72,30.82,"clu",-0.47,-1.04,0.09
+"Q1 sens: todos favorecidos","margem_22",-63.72,30.82,"rob",-0.15,-0.23,-0.06
+"Q1 sens: todos favorecidos","margem_22",-63.72,30.82,"clu",-0.15,-0.33,0.04
+"Q1 sens: só individuais","margem_22",-63.72,30.82,"rob",-0.2,-0.29,-0.11
+"Q1 sens: só individuais","margem_22",-63.72,30.82,"clu",-0.2,-0.41,0.01
+"Q1 sens: só bancada/comissão/relator","margem_22",-63.72,30.82,"rob",-0.13,-0.28,0.02
+"Q1 sens: só bancada/comissão/relator","margem_22",-63.72,30.82,"clu",-0.13,-0.43,0.17
+"Q3: individuais de autores do PL","margem_22",-63.72,30.82,"rob",0.97,0.7,1.25
+"Q3: individuais de autores do PL","margem_22",-63.72,30.82,"clu",0.97,0.5,1.45
+"Q3: individuais PT/PCdoB/PV/PSOL/Rede/PSB/PDT","margem_22",-63.72,30.82,"rob",-1,-1.26,-0.74
+"Q3: individuais PT/PCdoB/PV/PSOL/Rede/PSB/PDT","margem_22",-63.72,30.82,"clu",-1,-1.48,-0.51
+"Q3: individuais demais partidos","margem_22",-63.72,30.82,"rob",-0.11,-0.25,0.03
+"Q3: individuais demais partidos","margem_22",-63.72,30.82,"clu",-0.11,-0.37,0.15
+"Q2a efeito: delta ~ emendas + margem22 + pop + UF","le",5.49,7.68,"rob",0.32,-0.32,0.96
+"Q2a efeito: delta ~ emendas + margem22 + pop + UF","le",5.49,7.68,"clu",0.32,-0.71,1.35
+"Q2b efeito: + Censo","le",5.49,7.68,"rob",0.18,-0.38,0.74
+"Q2b efeito: + Censo","le",5.49,7.68,"clu",0.18,-0.68,1.04
+"Q2 sens: sem peso","le",5.49,7.68,"rob",-0.37,-0.84,0.09
+"Q2 sens: sem peso","le",5.49,7.68,"clu",-0.37,-0.97,0.22
+"Q2 sens: todos favorecidos","le_todos",5.6,7.7,"rob",-0.29,-0.78,0.19
+"Q2 sens: todos favorecidos","le_todos",5.6,7.7,"clu",-0.29,-1.05,0.47
+"Q2: individuais do PL","le_pl",0,5.74,"rob",0.36,-0.12,0.83
+"Q2: individuais do PL","le_pl",0,5.74,"clu",0.36,-0.22,0.93
+"Q2: individuais esquerda","le_esq",0,5.85,"rob",-0.08,-0.62,0.47
+"Q2: individuais esquerda","le_esq",0,5.85,"clu",-0.08,-1.11,0.96

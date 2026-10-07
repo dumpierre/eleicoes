@@ -1,0 +1,50 @@
+{
+  "executado_em": "2026-10-07 11:31:10 UTC",
+  "read_dbc": "1.2.0",
+  "R": "R version 4.6.1 (2026-06-24 ucrt)",
+  "anos": {
+    "2020": {
+      "registros_read_dbc": 1556824,
+      "obitos_total_js": 1556824,
+      "registros_header_js": 1556824,
+      "covid_basica": [212706, 212706, 212706],
+      "covid_qualquer": [224725, 224725, 224725],
+      "registros_identicos": true,
+      "registros_so_read_dbc": 0,
+      "registros_so_js": 0,
+      "exemplos_divergentes": [],
+      "municipios_comparados": 5139,
+      "municipios_com_contagem_basica_diferente": 0,
+      "segundos": 83.9
+    },
+    "2021": {
+      "registros_read_dbc": 1832649,
+      "obitos_total_js": 1832649,
+      "registros_header_js": 1832649,
+      "covid_basica": [424461, 424461, 424461],
+      "covid_qualquer": [445312, 445312, 445312],
+      "registros_identicos": true,
+      "registros_so_read_dbc": 0,
+      "registros_so_js": 0,
+      "exemplos_divergentes": [],
+      "municipios_comparados": 5544,
+      "municipios_com_contagem_basica_diferente": 0,
+      "segundos": 209.7
+    },
+    "2022": {
+      "registros_read_dbc": 1544266,
+      "obitos_total_js": 1544266,
+      "registros_header_js": 1544266,
+      "covid_basica": [65764, 65764, 65764],
+      "covid_qualquer": [76023, 76023, 76023],
+      "registros_identicos": true,
+      "registros_so_read_dbc": 0,
+      "registros_so_js": 0,
+      "exemplos_divergentes": [],
+      "municipios_comparados": 4789,
+      "municipios_com_contagem_basica_diferente": 0,
+      "segundos": 88.1
+    }
+  },
+  "aprovado": true
+}

@@ -1,0 +1,53 @@
+{
+  "valor_periodo_bi": 150.68,
+  "valor_municipal_bi": 85.37,
+  "pct_valor_sem_codigo_ibge": 0.093,
+  "correspondencias_manuais": {
+    "RN ACU": "ASSU",
+    "SP EMBU": "EMBU DAS ARTES",
+    "RN PRESIDENTE JUSCELINO": "SERRA CAIADA",
+    "RN AUGUSTO SEVERO": "CAMPO GRANDE",
+    "TO FORTALEZA DO TABOCAO": "TABOCAO",
+    "PB SERIDO": "SAO VICENTE DO SERIDO"
+  },
+  "correspondencias_por_similaridade": {
+    "BA MUQUEM DE SAO FRANCISCO": "MUQUEM DO SAO FRANCISCO",
+    "BA SANTA TERESINHA": "SANTA TEREZINHA",
+    "CE ITAPAGE": "ITAPAJE",
+    "MG BARAO DE MONTE ALTO": "BARAO DO MONTE ALTO",
+    "MG BRASOPOLIS": "BRAZOPOLIS",
+    "MG DONA EUSEBIA": "DONA EUZEBIA",
+    "MG SAO THOME DAS LETRAS": "SAO TOME DAS LETRAS",
+    "MT POXOREO": "POXOREU",
+    "MT SANTO ANTONIO DO LEVERGER": "SANTO ANTONIO DE LEVERGER",
+    "PA ELDORADO DOS CARAJAS": "ELDORADO DO CARAJAS",
+    "PA SANTA ISABEL DO PARA": "SANTA IZABEL DO PARA",
+    "PE IGUARACI": "IGUARACY",
+    "RJ TRAJANO DE MORAIS": "TRAJANO DE MORAES",
+    "RN ARES": "AREZ",
+    "RR SAO LUIZ": "SAO LUIZ DO ANAUA",
+    "SE AMPARO DE SAO FRANCISCO": "AMPARO DO SAO FRANCISCO",
+    "SE GRACHO CARDOSO": "GRACCHO CARDOSO",
+    "SP FLORINIA": "FLORINEA",
+    "SP SAO LUIS DO PARAITINGA": "SAO LUIZ DO PARAITINGA"
+  },
+  "sem_codigo_exemplos": "{('-1', 'Sem informação'): 1906147.0, ('RO', 'BOA VISTA'): 21.0}",
+  "municipal_por_bloco_bi": {
+    "PL": 9.22,
+    "coletiva": 32.2,
+    "demais": 32.55,
+    "esquerda": 10.27,
+    "sem_partido_identificado": 1.13
+  },
+  "municipios_com_emenda_municipal": 5569,
+  "pc_municipal_resumo": {
+    "count": 5570.0,
+    "mean": 1055.2,
+    "std": 1008.0,
+    "min": 0.0,
+    "25%": 437.5,
+    "50%": 785.9,
+    "75%": 1331.2,
+    "max": 16287.1
+  }
+}

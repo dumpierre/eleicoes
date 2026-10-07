@@ -1,0 +1,9 @@
+{
+ "origem": "video/checagens.py (PROIBIDAS)",
+ "padroes": [
+  "\\b(beneficiári[oa]s|pobres|evangélic[oa]s|nordestinos|eleitores( d[oa] [\\wÀ-ú]+)?|quem recebe)\\s+(não\\s+)?(vota|votam|votou|votaram|escolhe|escolhem|prefere|preferem|apoia|apoiam)\\b",
+  "\\bvoto (dos|das) (beneficiári|pobres|evangélic|nordestin)",
+  "\\b(bolsa família|programa)\\s+(é|e)\\s+(só|apenas)\\b",
+  "\\bcompra(m|ram)? (o )?voto\\b(?! comprado)"
+ ]
+}

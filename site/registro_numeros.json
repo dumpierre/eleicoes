@@ -1,0 +1,1328 @@
+{
+ "n_mun": {
+  "valor": 5571.0,
+  "texto": "5.571",
+  "fonte": "logs/06_tse_2026_log.json",
+  "como": "municipios_brasil"
+ },
+ "flavio_pct": {
+  "valor": 47.03,
+  "texto": "47,0%",
+  "fonte": "logs/06_tse_2026_log.json",
+  "como": "pct_22 (Brasil + exterior, 100% das seções)"
+ },
+ "lula_pct": {
+  "valor": 45.16,
+  "texto": "45,2%",
+  "fonte": "logs/06_tse_2026_log.json",
+  "como": "pct_13"
+ },
+ "dif_votos": {
+  "valor": 2224965.0,
+  "texto": "2.224.965",
+  "fonte": "logs/06_tse_2026_log.json",
+  "como": "diferenca_22_menos_13"
+ },
+ "dif_mi": {
+  "valor": 2.224965,
+  "texto": "2,22 mi",
+  "fonte": "logs/06_tse_2026_log.json",
+  "como": "diferenca_22_menos_13 / 1e6"
+ },
+ "outros_mi": {
+  "valor": 9.316747,
+  "texto": "9,32 mi",
+  "fonte": "logs/06_tse_2026_log.json",
+  "como": "outros / 1e6"
+ },
+ "n_mapa": {
+  "valor": 5570.0,
+  "texto": "5.570",
+  "fonte": "data/derived/base_analitica_emendas.csv + data/derived/ibge_centroides_municipios.csv",
+  "como": "municípios com 2022, 2026 e centroide IBGE (sem Boa Esperança do Norte/MT)"
+ },
+ "lula_pct22": {
+  "valor": 48.433863601394506,
+  "texto": "48,4%",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "soma lula_22 / soma validos_22 (5.570 do mapa)"
+ },
+ "bols_pct22": {
+  "valor": 43.20152048929516,
+  "texto": "43,2%",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "soma bolsonaro_22 / soma validos_22"
+ },
+ "lula_perda_mi": {
+  "valor": 3.399184,
+  "texto": "3,4 milhões",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "(soma lula_22 − soma lula_26) / 1e6, 5.570 do mapa"
+ },
+ "pct_cid_lula_caiu": {
+  "valor": 98.16876122082586,
+  "texto": "98%",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "% de municípios com pct_lula_26 < 100*lula_22/validos_22"
+ },
+ "n_uf_lula_caiu": {
+  "valor": 25.0,
+  "texto": "25",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "UFs em que a fatia de Lula (votos somados por UF) caiu"
+ },
+ "n_uf": {
+  "valor": 27.0,
+  "texto": "27",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "número de UFs"
+ },
+ "viradas": {
+  "valor": 711.0,
+  "texto": "711",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "venc_22 == 13 e venc_26 == 22"
+ },
+ "viradas_inv": {
+  "valor": 0.0,
+  "texto": "0",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "venc_22 == 22 e venc_26 == 13"
+ },
+ "pct_andou_pl": {
+  "valor": 98.95870736086177,
+  "texto": "99%",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "% de municípios com delta_margem > 0 (margem PL − Lula subiu)"
+ },
+ "r_m22_m26": {
+  "valor": 0.9845646246296645,
+  "texto": "0,98",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "correlação ponderada por eleitorado_26, margem_22 x margem_26"
+ },
+ "desloc_nac": {
+  "valor": 7.112678264997613,
+  "texto": "7,1 pontos",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "margem nacional (PL − Lula, votos somados) 2026 menos 2022, 5.570 do mapa"
+ },
+ "n_cid_perto": {
+  "valor": 426.0,
+  "texto": "426",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "municípios com |margem_26| < 5 pontos"
+ },
+ "pct_cid_perto": {
+  "valor": 7.648114901256732,
+  "texto": "7,6%",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "% de municípios com |margem_26| < 5"
+ },
+ "pct_vot_perto": {
+  "valor": 16.338220882400243,
+  "texto": "16,3%",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "soma validos_26 dos municípios com |margem_26| < 5 / soma validos_26"
+ },
+ "pct_cid_10k": {
+  "valor": 52.76481149012567,
+  "texto": "52,8%",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "% de municípios com eleitorado_26 < 10.000"
+ },
+ "pct_vot_10k": {
+  "valor": 10.034121560234365,
+  "texto": "10%",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "soma validos_26 dos municípios com eleitorado_26 < 10.000 / soma validos_26"
+ },
+ "pct_cid_lula20": {
+  "valor": 36.01436265709157,
+  "texto": "36%",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "% de municípios com margem_26 ≤ −20"
+ },
+ "pct_vot_lula20": {
+  "valor": 23.258844740584042,
+  "texto": "23%",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "soma validos_26 desses municípios / soma validos_26"
+ },
+ "pct_cid_flavio20": {
+  "valor": 33.15978456014363,
+  "texto": "33%",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "% de municípios com margem_26 ≥ 20"
+ },
+ "pct_vot_flavio20": {
+  "valor": 30.848175796933187,
+  "texto": "31%",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "soma validos_26 desses municípios / soma validos_26"
+ },
+ "bf_d10_lula": {
+  "valor": 68.07307079171072,
+  "texto": "68,1%",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "ponta superior de 10% do eleitorado_26, municípios ordenados por pct_bf_26; soma lula_26 / soma validos_26"
+ },
+ "bf_d10_lula_lim": {
+  "valor": 49.982313,
+  "texto": "50%",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "mínimo de pct_bf_26 na ponta (inteiro)"
+ },
+ "bf_d1_flavio": {
+  "valor": 63.47070584727792,
+  "texto": "63,5%",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "ponta inferior de 10% do eleitorado_26, municípios ordenados por pct_bf_26; soma flavio_26 / soma validos_26"
+ },
+ "bf_d1_flavio_lim": {
+  "valor": 9.043443,
+  "texto": "9%",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "máximo de pct_bf_26 na ponta (inteiro)"
+ },
+ "renda_d1_lula": {
+  "valor": 69.47457089525729,
+  "texto": "69,5%",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "ponta inferior de 10% do eleitorado_26, municípios ordenados por renda_pc_media; soma lula_26 / soma validos_26"
+ },
+ "renda_d1_lula_lim": {
+  "valor": 734.95,
+  "texto": "R$ 730",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "máximo de renda_pc_media na ponta (arredondado à dezena)"
+ },
+ "renda_d10_flavio": {
+  "valor": 46.66353322760437,
+  "texto": "46,7%",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "ponta superior de 10% do eleitorado_26, municípios ordenados por renda_pc_media; soma flavio_26 / soma validos_26"
+ },
+ "renda_d10_flavio_lim": {
+  "valor": 2713.36,
+  "texto": "R$ 2.710",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "mínimo de renda_pc_media na ponta (arredondado à dezena)"
+ },
+ "ev_d1_lula": {
+  "valor": 60.58519491357361,
+  "texto": "60,6%",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "ponta inferior de 10% do eleitorado_26, municípios ordenados por pct_evangelicas; soma lula_26 / soma validos_26"
+ },
+ "ev_d1_lula_lim": {
+  "valor": 14.681892,
+  "texto": "15%",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "máximo de pct_evangelicas na ponta (inteiro)"
+ },
+ "ev_d10_flavio": {
+  "valor": 54.31783341423166,
+  "texto": "54,3%",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "ponta superior de 10% do eleitorado_26, municípios ordenados por pct_evangelicas; soma flavio_26 / soma validos_26"
+ },
+ "ev_d10_flavio_lim": {
+  "valor": 38.32138,
+  "texto": "38%",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "mínimo de pct_evangelicas na ponta (inteiro)"
+ },
+ "ponta": {
+  "valor": 10.0,
+  "texto": "10%",
+  "fonte": "parâmetro do build",
+  "como": "fatia do eleitorado em cada ponta (mesmo corte do site original)"
+ },
+ "lim_empate": {
+  "valor": 5.0,
+  "texto": "5",
+  "fonte": "parâmetro do build",
+  "como": "|margem_26| < 5 pontos = perto do empate"
+ },
+ "lim_peq": {
+  "valor": 10.0,
+  "texto": "10",
+  "fonte": "parâmetro do build",
+  "como": "cidade pequena: eleitorado_26 < 10 mil"
+ },
+ "lim_bf_alto": {
+  "valor": 80.0,
+  "texto": "80%",
+  "fonte": "parâmetro do build",
+  "como": "limite do eixo no site original"
+ },
+ "lim_bf_max": {
+  "valor": 100.0,
+  "texto": "100%",
+  "fonte": "parâmetro do build",
+  "como": "população inteira"
+ },
+ "pct_andou_q5": {
+  "valor": 97.30700179533214,
+  "texto": "97%",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "quinto de municípios com maior pct_bf_26: % com delta_margem > 0"
+ },
+ "bonfim_bf": {
+  "valor": 57.111449,
+  "texto": "57,1%",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "linha cd_ibge7=2201929, pct_bf_26"
+ },
+ "bonfim_lula": {
+  "valor": 88.725,
+  "texto": "88,7%",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "linha cd_ibge7=2201929, pct_lula_26"
+ },
+ "ex_recebe": {
+  "valor": 57.0,
+  "texto": "57",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "exemplo ilustrativo: pct_bf_26 de Bonfim do Piauí arredondado"
+ },
+ "ex_lula": {
+  "valor": 89.0,
+  "texto": "89",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "exemplo ilustrativo: pct_lula_26 de Bonfim do Piauí arredondado"
+ },
+ "ex_outros": {
+  "valor": 11.0,
+  "texto": "11",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "exemplo ilustrativo: 100 − ex_lula"
+ },
+ "r_renda_bf": {
+  "valor": -0.9053810967789014,
+  "texto": "−0,91",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "correlação de Pearson sem peso, log(renda_pc_media) x pct_bf_26"
+ },
+ "r_bf26": {
+  "valor": -0.7350940888431109,
+  "texto": "−0,74",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "correlação ponderada por eleitorado_26, pct_bf_26 x margem_26"
+ },
+ "r_renda26": {
+  "valor": 0.5874993787685824,
+  "texto": "0,59",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "correlação ponderada por eleitorado_26, log(renda_pc_media) x margem_26"
+ },
+ "n_bf80": {
+  "valor": 19.0,
+  "texto": "19",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "municípios com pct_bf_26 > 80"
+ },
+ "n_bf100": {
+  "valor": 1.0,
+  "texto": "1",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "municípios com pct_bf_26 > 100"
+ },
+ "bf_max": {
+  "valor": 100.607251,
+  "texto": "100,6%",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "máximo de pct_bf_26"
+ },
+ "n_ab100": {
+  "valor": 2.0,
+  "texto": "2",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "municípios com pct_ab_22 > 100"
+ },
+ "renda_pico": {
+  "valor": 1697.1041378758616,
+  "texto": "R$ 1.700",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "renda_pc_media no máximo da curva (spline cúbica restrita, 5 nós nos quantis 5/27,5/50/72,5/95% de log renda, mínimos quadrados ponderados por validos_26, margem_26), arredondada à centena"
+ },
+ "renda_pico_m": {
+  "valor": 18.610373633037955,
+  "texto": "+19",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "margem_26 prevista pela curva no máximo"
+ },
+ "renda_fim_m": {
+  "valor": 10.747174440129468,
+  "texto": "+11",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "margem_26 prevista pela curva no percentil 99,5 de renda"
+ },
+ "r_ev26": {
+  "valor": 0.40520099919593555,
+  "texto": "0,41",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "correlação ponderada por eleitorado_26, pct_evangelicas x margem_26"
+ },
+ "r_ab22": {
+  "valor": -0.7524527642674947,
+  "texto": "−0,75",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "correlação ponderada por eleitorado_26, pct_ab_22 x margem_22"
+ },
+ "r_ab_bf": {
+  "valor": 0.9803872704202174,
+  "texto": "0,98",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "correlação sem peso, pct_ab_22 x pct_bf_26"
+ },
+ "q22_1_lula": {
+  "valor": 36.00447315262256,
+  "texto": "36,0%",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "quintil 1 de municípios (contagem igual) por pct_ab_22; soma lula_22 / soma validos_22"
+ },
+ "q22_1_bolsonaro": {
+  "valor": 54.375717659267416,
+  "texto": "54,4%",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "idem; soma bolsonaro_22 / soma validos_22"
+ },
+ "q22_1_lo": {
+  "valor": 0.635772,
+  "texto": "1%",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "quintil 1: mínimo de pct_ab_22"
+ },
+ "q22_1_hi": {
+  "valor": 15.304166,
+  "texto": "15%",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "quintil 1: máximo de pct_ab_22"
+ },
+ "q22_2_lula": {
+  "valor": 43.59007104328244,
+  "texto": "43,6%",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "quintil 2 de municípios (contagem igual) por pct_ab_22; soma lula_22 / soma validos_22"
+ },
+ "q22_2_bolsonaro": {
+  "valor": 46.57732972813888,
+  "texto": "46,6%",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "idem; soma bolsonaro_22 / soma validos_22"
+ },
+ "q22_2_lo": {
+  "valor": 15.310486,
+  "texto": "15%",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "quintil 2: mínimo de pct_ab_22"
+ },
+ "q22_2_hi": {
+  "valor": 24.675325,
+  "texto": "25%",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "quintil 2: máximo de pct_ab_22"
+ },
+ "q22_3_lula": {
+  "valor": 51.13239650382095,
+  "texto": "51,1%",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "quintil 3 de municípios (contagem igual) por pct_ab_22; soma lula_22 / soma validos_22"
+ },
+ "q22_3_bolsonaro": {
+  "valor": 41.12871391037852,
+  "texto": "41,1%",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "idem; soma bolsonaro_22 / soma validos_22"
+ },
+ "q22_3_lo": {
+  "valor": 24.687199,
+  "texto": "25%",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "quintil 3: mínimo de pct_ab_22"
+ },
+ "q22_3_hi": {
+  "valor": 41.338,
+  "texto": "41%",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "quintil 3: máximo de pct_ab_22"
+ },
+ "q22_4_lula": {
+  "valor": 66.67645349127935,
+  "texto": "66,7%",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "quintil 4 de municípios (contagem igual) por pct_ab_22; soma lula_22 / soma validos_22"
+ },
+ "q22_4_bolsonaro": {
+  "valor": 27.82037755583764,
+  "texto": "27,8%",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "idem; soma bolsonaro_22 / soma validos_22"
+ },
+ "q22_4_lo": {
+  "valor": 41.372981,
+  "texto": "41%",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "quintil 4: mínimo de pct_ab_22"
+ },
+ "q22_4_hi": {
+  "valor": 57.322854,
+  "texto": "57%",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "quintil 4: máximo de pct_ab_22"
+ },
+ "q22_5_lula": {
+  "valor": 73.29924818801491,
+  "texto": "73,3%",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "quintil 5 de municípios (contagem igual) por pct_ab_22; soma lula_22 / soma validos_22"
+ },
+ "q22_5_bolsonaro": {
+  "valor": 21.86498905210149,
+  "texto": "21,9%",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "idem; soma bolsonaro_22 / soma validos_22"
+ },
+ "q22_5_lo": {
+  "valor": 57.344348,
+  "texto": "57%",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "quintil 5: mínimo de pct_ab_22"
+ },
+ "q22_5_hi": {
+  "valor": 101.86238,
+  "texto": "102%",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "quintil 5: máximo de pct_ab_22"
+ },
+ "q26_1_lula": {
+  "valor": 31.17396536901191,
+  "texto": "31,2%",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "quintil 1 de municípios (contagem igual) por pct_bf_26; soma lula_26 / soma validos_26"
+ },
+ "q26_1_flavio": {
+  "valor": 59.33116096995056,
+  "texto": "59,3%",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "idem; soma flavio_26 / soma validos_26"
+ },
+ "q26_1_lo": {
+  "valor": 0.266845,
+  "texto": "0%",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "quintil 1: mínimo de pct_bf_26"
+ },
+ "q26_1_hi": {
+  "valor": 13.054561,
+  "texto": "13%",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "quintil 1: máximo de pct_bf_26"
+ },
+ "q26_2_lula": {
+  "valor": 39.821670394309415,
+  "texto": "39,8%",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "quintil 2 de municípios (contagem igual) por pct_bf_26; soma lula_26 / soma validos_26"
+ },
+ "q26_2_flavio": {
+  "valor": 50.94249042314574,
+  "texto": "50,9%",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "idem; soma flavio_26 / soma validos_26"
+ },
+ "q26_2_lo": {
+  "valor": 13.059701,
+  "texto": "13%",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "quintil 2: mínimo de pct_bf_26"
+ },
+ "q26_2_hi": {
+  "valor": 21.077708,
+  "texto": "21%",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "quintil 2: máximo de pct_bf_26"
+ },
+ "q26_3_lula": {
+  "valor": 47.03261501495093,
+  "texto": "47,0%",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "quintil 3 de municípios (contagem igual) por pct_bf_26; soma lula_26 / soma validos_26"
+ },
+ "q26_3_flavio": {
+  "valor": 45.51965610210392,
+  "texto": "45,5%",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "idem; soma flavio_26 / soma validos_26"
+ },
+ "q26_3_lo": {
+  "valor": 21.104221,
+  "texto": "21%",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "quintil 3: mínimo de pct_bf_26"
+ },
+ "q26_3_hi": {
+  "valor": 35.639687,
+  "texto": "36%",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "quintil 3: máximo de pct_bf_26"
+ },
+ "q26_4_lula": {
+  "valor": 61.93990941020969,
+  "texto": "61,9%",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "quintil 4 de municípios (contagem igual) por pct_bf_26; soma lula_26 / soma validos_26"
+ },
+ "q26_4_flavio": {
+  "valor": 32.96518410650273,
+  "texto": "33,0%",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "idem; soma flavio_26 / soma validos_26"
+ },
+ "q26_4_lo": {
+  "valor": 35.643419,
+  "texto": "36%",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "quintil 4: mínimo de pct_bf_26"
+ },
+ "q26_4_hi": {
+  "valor": 50.015347,
+  "texto": "50%",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "quintil 4: máximo de pct_bf_26"
+ },
+ "q26_5_lula": {
+  "valor": 68.09058512013647,
+  "texto": "68,1%",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "quintil 5 de municípios (contagem igual) por pct_bf_26; soma lula_26 / soma validos_26"
+ },
+ "q26_5_flavio": {
+  "valor": 27.854528440710126,
+  "texto": "27,9%",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "idem; soma flavio_26 / soma validos_26"
+ },
+ "q26_5_lo": {
+  "valor": 50.032816,
+  "texto": "50%",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "quintil 5: mínimo de pct_bf_26"
+ },
+ "q26_5_hi": {
+  "valor": 100.607251,
+  "texto": "101%",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "quintil 5: máximo de pct_bf_26"
+ },
+ "ec_I": {
+  "valor": 26.0,
+  "texto": "R$ 26 bi",
+  "fonte": "data/derived/ec123_2022_beneficios.csv",
+  "como": "linha 2 (inciso I, 'Auxílio Brasil'), limite_reais / 1e9"
+ },
+ "ec_I_mensal": {
+  "valor": 200.0,
+  "texto": "R$ 200",
+  "fonte": "data/derived/ec123_2022_beneficios.csv",
+  "como": "linha 2, mensal_reais"
+ },
+ "ec_III": {
+  "valor": 5.4,
+  "texto": "R$ 5,4 bi",
+  "fonte": "data/derived/ec123_2022_beneficios.csv",
+  "como": "linha 3 (inciso III, 'Auxílio caminhoneiro'), limite_reais / 1e9"
+ },
+ "ec_III_mensal": {
+  "valor": 1000.0,
+  "texto": "R$ 1.000",
+  "fonte": "data/derived/ec123_2022_beneficios.csv",
+  "como": "linha 3, mensal_reais"
+ },
+ "ec_V": {
+  "valor": 3.8,
+  "texto": "R$ 3,8 bi",
+  "fonte": "data/derived/ec123_2022_beneficios.csv",
+  "como": "linha 4 (inciso V, 'Etanol (ajuda aos estados)'), limite_reais / 1e9"
+ },
+ "ec_IV": {
+  "valor": 2.5,
+  "texto": "R$ 2,5 bi",
+  "fonte": "data/derived/ec123_2022_beneficios.csv",
+  "como": "linha 5 (inciso IV, 'Transporte grátis de idosos'), limite_reais / 1e9"
+ },
+ "ec_VI": {
+  "valor": 2.0,
+  "texto": "R$ 2 bi",
+  "fonte": "data/derived/ec123_2022_beneficios.csv",
+  "como": "linha 6 (inciso VI, 'Auxílio taxista'), limite_reais / 1e9"
+ },
+ "ec_II": {
+  "valor": 1.05,
+  "texto": "R$ 1,05 bi",
+  "fonte": "data/derived/ec123_2022_beneficios.csv",
+  "como": "linha 7 (inciso II, 'Auxílio Gás'), limite_reais / 1e9"
+ },
+ "ec_VII": {
+  "valor": 0.5,
+  "texto": "R$ 0,5 bi",
+  "fonte": "data/derived/ec123_2022_beneficios.csv",
+  "como": "linha 8 (inciso VII, 'Alimenta Brasil'), limite_reais / 1e9"
+ },
+ "ec_total": {
+  "valor": 41.25,
+  "texto": "R$ 41,25 bi",
+  "fonte": "data/derived/ec123_2022_beneficios.csv",
+  "como": "linha 9 (inciso total, 'Total'), limite_reais / 1e9"
+ },
+ "a22": {
+  "valor": -54.1,
+  "texto": "−54",
+  "fonte": "output/contrastes_p90_p10.csv",
+  "como": "linha 7 (modelo 'A22: AB + UF', IC 95% com erro agrupado por UF), diff_margem_p90_menos_p10"
+ },
+ "a22_li": {
+  "valor": -62.7,
+  "texto": "−63",
+  "fonte": "output/contrastes_p90_p10.csv",
+  "como": "linha 7 (modelo 'A22: AB + UF', IC 95% com erro agrupado por UF), li"
+ },
+ "a22_ls": {
+  "valor": -45.5,
+  "texto": "−46",
+  "fonte": "output/contrastes_p90_p10.csv",
+  "como": "linha 7 (modelo 'A22: AB + UF', IC 95% com erro agrupado por UF), ls"
+ },
+ "a22_p10": {
+  "valor": 10.367,
+  "texto": "10%",
+  "fonte": "output/contrastes_p90_p10.csv",
+  "como": "linha 7 (modelo 'A22: AB + UF', IC 95% com erro agrupado por UF), p10"
+ },
+ "a22_p90": {
+  "valor": 64.274,
+  "texto": "64%",
+  "fonte": "output/contrastes_p90_p10.csv",
+  "como": "linha 7 (modelo 'A22: AB + UF', IC 95% com erro agrupado por UF), p90"
+ },
+ "aj22": {
+  "valor": -33.7,
+  "texto": "−34",
+  "fonte": "output/contrastes_p90_p10.csv",
+  "como": "linha 9 (modelo 'B22: AB + UF + Censo', IC 95% com erro agrupado por UF), diff_margem_p90_menos_p10"
+ },
+ "aj22_li": {
+  "valor": -43.0,
+  "texto": "−43",
+  "fonte": "output/contrastes_p90_p10.csv",
+  "como": "linha 9 (modelo 'B22: AB + UF + Censo', IC 95% com erro agrupado por UF), li"
+ },
+ "aj22_ls": {
+  "valor": -24.5,
+  "texto": "−25",
+  "fonte": "output/contrastes_p90_p10.csv",
+  "como": "linha 9 (modelo 'B22: AB + UF + Censo', IC 95% com erro agrupado por UF), ls"
+ },
+ "aj22_p10": {
+  "valor": 10.367,
+  "texto": "10%",
+  "fonte": "output/contrastes_p90_p10.csv",
+  "como": "linha 9 (modelo 'B22: AB + UF + Censo', IC 95% com erro agrupado por UF), p10"
+ },
+ "aj22_p90": {
+  "valor": 64.274,
+  "texto": "64%",
+  "fonte": "output/contrastes_p90_p10.csv",
+  "como": "linha 9 (modelo 'B22: AB + UF + Censo', IC 95% com erro agrupado por UF), p90"
+ },
+ "a26": {
+  "valor": -48.1,
+  "texto": "−48",
+  "fonte": "output/contrastes_p90_p10.csv",
+  "como": "linha 3 (modelo 'A26: BF + UF', IC 95% com erro agrupado por UF), diff_margem_p90_menos_p10"
+ },
+ "a26_li": {
+  "valor": -58.0,
+  "texto": "−58",
+  "fonte": "output/contrastes_p90_p10.csv",
+  "como": "linha 3 (modelo 'A26: BF + UF', IC 95% com erro agrupado por UF), li"
+ },
+ "a26_ls": {
+  "valor": -38.1,
+  "texto": "−38",
+  "fonte": "output/contrastes_p90_p10.csv",
+  "como": "linha 3 (modelo 'A26: BF + UF', IC 95% com erro agrupado por UF), ls"
+ },
+ "a26_p10": {
+  "valor": 8.984,
+  "texto": "9%",
+  "fonte": "output/contrastes_p90_p10.csv",
+  "como": "linha 3 (modelo 'A26: BF + UF', IC 95% com erro agrupado por UF), p10"
+ },
+ "a26_p90": {
+  "valor": 57.117,
+  "texto": "57%",
+  "fonte": "output/contrastes_p90_p10.csv",
+  "como": "linha 3 (modelo 'A26: BF + UF', IC 95% com erro agrupado por UF), p90"
+ },
+ "aj26": {
+  "valor": -31.8,
+  "texto": "−32",
+  "fonte": "output/contrastes_p90_p10.csv",
+  "como": "linha 5 (modelo 'B26: BF + UF + Censo', IC 95% com erro agrupado por UF), diff_margem_p90_menos_p10"
+ },
+ "aj26_li": {
+  "valor": -44.4,
+  "texto": "−44",
+  "fonte": "output/contrastes_p90_p10.csv",
+  "como": "linha 5 (modelo 'B26: BF + UF + Censo', IC 95% com erro agrupado por UF), li"
+ },
+ "aj26_ls": {
+  "valor": -19.2,
+  "texto": "−19",
+  "fonte": "output/contrastes_p90_p10.csv",
+  "como": "linha 5 (modelo 'B26: BF + UF + Censo', IC 95% com erro agrupado por UF), ls"
+ },
+ "aj26_p10": {
+  "valor": 8.984,
+  "texto": "9%",
+  "fonte": "output/contrastes_p90_p10.csv",
+  "como": "linha 5 (modelo 'B26: BF + UF + Censo', IC 95% com erro agrupado por UF), p10"
+ },
+ "aj26_p90": {
+  "valor": 57.117,
+  "texto": "57%",
+  "fonte": "output/contrastes_p90_p10.csv",
+  "como": "linha 5 (modelo 'B26: BF + UF + Censo', IC 95% com erro agrupado por UF), p90"
+ },
+ "red22": {
+  "valor": 37.707948243992604,
+  "texto": "38%",
+  "fonte": "output/contrastes_p90_p10.csv",
+  "como": "1 − aj22 / a22 (estimativas pontuais)"
+ },
+ "red26": {
+  "valor": 33.88773388773389,
+  "texto": "34%",
+  "fonte": "output/contrastes_p90_p10.csv",
+  "como": "1 − aj26 / a26 (estimativas pontuais)"
+ },
+ "uf_PI_m26": {
+  "valor": -46.901081534890615,
+  "texto": "46,9",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "UF PI: |soma flavio_26 − soma lula_26| / soma validos_26 (5.571 municípios)"
+ },
+ "uf_PI_m22": {
+  "valor": -54.349374335375025,
+  "texto": "54,3",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "UF PI: |soma bolsonaro_22 − soma lula_22| / soma validos_22"
+ },
+ "uf_PI_vir": {
+  "valor": 0.0,
+  "texto": "0",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "UF PI: municípios com venc_22 == 13 e venc_26 == 22"
+ },
+ "uf_BA_m26": {
+  "valor": -37.64108019225047,
+  "texto": "37,6",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "UF BA: |soma flavio_26 − soma lula_26| / soma validos_26 (5.571 municípios)"
+ },
+ "uf_BA_m22": {
+  "valor": -45.417052910314226,
+  "texto": "45,4",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "UF BA: |soma bolsonaro_22 − soma lula_22| / soma validos_22"
+ },
+ "uf_BA_vir": {
+  "valor": 2.0,
+  "texto": "2",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "UF BA: municípios com venc_22 == 13 e venc_26 == 22"
+ },
+ "uf_MA_m26": {
+  "valor": -33.095154919448966,
+  "texto": "33,1",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "UF MA: |soma flavio_26 − soma lula_26| / soma validos_26 (5.571 municípios)"
+ },
+ "uf_MA_m22": {
+  "valor": -42.8277376644291,
+  "texto": "42,8",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "UF MA: |soma bolsonaro_22 − soma lula_22| / soma validos_22"
+ },
+ "uf_MA_vir": {
+  "valor": 3.0,
+  "texto": "3",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "UF MA: municípios com venc_22 == 13 e venc_26 == 22"
+ },
+ "uf_PE_m26": {
+  "valor": -32.421397756871656,
+  "texto": "32,4",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "UF PE: |soma flavio_26 − soma lula_26| / soma validos_26 (5.571 municípios)"
+ },
+ "uf_PE_m22": {
+  "valor": -35.35181251534985,
+  "texto": "35,4",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "UF PE: |soma bolsonaro_22 − soma lula_22| / soma validos_22"
+ },
+ "uf_PE_vir": {
+  "valor": 0.0,
+  "texto": "0",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "UF PE: municípios com venc_22 == 13 e venc_26 == 22"
+ },
+ "uf_SE_m26": {
+  "valor": -32.12001794463552,
+  "texto": "32,1",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "UF SE: |soma flavio_26 − soma lula_26| / soma validos_26 (5.571 municípios)"
+ },
+ "uf_SE_m22": {
+  "valor": -34.665350207018925,
+  "texto": "34,7",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "UF SE: |soma bolsonaro_22 − soma lula_22| / soma validos_22"
+ },
+ "uf_SE_vir": {
+  "valor": 0.0,
+  "texto": "0",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "UF SE: municípios com venc_22 == 13 e venc_26 == 22"
+ },
+ "uf_CE_m26": {
+  "valor": -32.012683225183316,
+  "texto": "32,0",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "UF CE: |soma flavio_26 − soma lula_26| / soma validos_26 (5.571 municípios)"
+ },
+ "uf_CE_m22": {
+  "valor": -40.53087121937706,
+  "texto": "40,5",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "UF CE: |soma bolsonaro_22 − soma lula_22| / soma validos_22"
+ },
+ "uf_CE_vir": {
+  "valor": 1.0,
+  "texto": "1",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "UF CE: municípios com venc_22 == 13 e venc_26 == 22"
+ },
+ "uf_PB_m26": {
+  "valor": -28.234742796311643,
+  "texto": "28,2",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "UF PB: |soma flavio_26 − soma lula_26| / soma validos_26 (5.571 municípios)"
+ },
+ "uf_PB_m22": {
+  "valor": -34.5813333509519,
+  "texto": "34,6",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "UF PB: |soma bolsonaro_22 − soma lula_22| / soma validos_22"
+ },
+ "uf_PB_vir": {
+  "valor": 0.0,
+  "texto": "0",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "UF PB: municípios com venc_22 == 13 e venc_26 == 22"
+ },
+ "uf_RN_m26": {
+  "valor": -24.975650345721654,
+  "texto": "25,0",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "UF RN: |soma flavio_26 − soma lula_26| / soma validos_26 (5.571 municípios)"
+ },
+ "uf_RN_m22": {
+  "valor": -31.9563345927591,
+  "texto": "32,0",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "UF RN: |soma bolsonaro_22 − soma lula_22| / soma validos_22"
+ },
+ "uf_RN_vir": {
+  "valor": 1.0,
+  "texto": "1",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "UF RN: municípios com venc_22 == 13 e venc_26 == 22"
+ },
+ "uf_AL_m26": {
+  "valor": -14.280459805504119,
+  "texto": "14,3",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "UF AL: |soma flavio_26 − soma lula_26| / soma validos_26 (5.571 municípios)"
+ },
+ "uf_AL_m22": {
+  "valor": -20.452240060270835,
+  "texto": "20,5",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "UF AL: |soma bolsonaro_22 − soma lula_22| / soma validos_22"
+ },
+ "uf_AL_vir": {
+  "valor": 8.0,
+  "texto": "8",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "UF AL: municípios com venc_22 == 13 e venc_26 == 22"
+ },
+ "uf_PA_m26": {
+  "valor": -5.413750531546078,
+  "texto": "5,4",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "UF PA: |soma flavio_26 − soma lula_26| / soma validos_26 (5.571 municípios)"
+ },
+ "uf_PA_m22": {
+  "valor": -11.945825754882119,
+  "texto": "11,9",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "UF PA: |soma bolsonaro_22 − soma lula_22| / soma validos_22"
+ },
+ "uf_PA_vir": {
+  "valor": 16.0,
+  "texto": "16",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "UF PA: municípios com venc_22 == 13 e venc_26 == 22"
+ },
+ "uf_AM_m26": {
+  "valor": -3.2353601014942672,
+  "texto": "3,2",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "UF AM: |soma flavio_26 − soma lula_26| / soma validos_26 (5.571 municípios)"
+ },
+ "uf_AM_m22": {
+  "valor": -6.782108606314266,
+  "texto": "6,8",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "UF AM: |soma bolsonaro_22 − soma lula_22| / soma validos_22"
+ },
+ "uf_AM_vir": {
+  "valor": 4.0,
+  "texto": "4",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "UF AM: municípios com venc_22 == 13 e venc_26 == 22"
+ },
+ "uf_AP_m26": {
+  "valor": -0.04840187756261052,
+  "texto": "0,05",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "UF AP: |soma flavio_26 − soma lula_26| / soma validos_26 (5.571 municípios)"
+ },
+ "uf_AP_m22": {
+  "valor": -2.2586489757289527,
+  "texto": "2,3",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "UF AP: |soma bolsonaro_22 − soma lula_22| / soma validos_22"
+ },
+ "uf_AP_vir": {
+  "valor": 1.0,
+  "texto": "1",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "UF AP: municípios com venc_22 == 13 e venc_26 == 22"
+ },
+ "uf_MG_m26": {
+  "valor": 4.914833418014927,
+  "texto": "4,9",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "UF MG: |soma flavio_26 − soma lula_26| / soma validos_26 (5.571 municípios)"
+ },
+ "uf_MG_m22": {
+  "valor": -4.687727419153102,
+  "texto": "4,7",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "UF MG: |soma bolsonaro_22 − soma lula_22| / soma validos_22"
+ },
+ "uf_MG_vir": {
+  "valor": 178.0,
+  "texto": "178",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "UF MG: municípios com venc_22 == 13 e venc_26 == 22"
+ },
+ "uf_TO_m26": {
+  "valor": 7.019421847778541,
+  "texto": "7,0",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "UF TO: |soma flavio_26 − soma lula_26| / soma validos_26 (5.571 municípios)"
+ },
+ "uf_TO_m22": {
+  "valor": -6.39469848873046,
+  "texto": "6,4",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "UF TO: |soma bolsonaro_22 − soma lula_22| / soma validos_22"
+ },
+ "uf_TO_vir": {
+  "valor": 37.0,
+  "texto": "37",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "UF TO: municípios com venc_22 == 13 e venc_26 == 22"
+ },
+ "uf_DF_m26": {
+  "valor": 13.198778435115365,
+  "texto": "13,2",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "UF DF: |soma flavio_26 − soma lula_26| / soma validos_26 (5.571 municípios)"
+ },
+ "uf_DF_m22": {
+  "valor": 14.800107796831341,
+  "texto": "14,8",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "UF DF: |soma bolsonaro_22 − soma lula_22| / soma validos_22"
+ },
+ "uf_DF_vir": {
+  "valor": 0.0,
+  "texto": "0",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "UF DF: municípios com venc_22 == 13 e venc_26 == 22"
+ },
+ "uf_RJ_m26": {
+  "valor": 13.595131114123184,
+  "texto": "13,6",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "UF RJ: |soma flavio_26 − soma lula_26| / soma validos_26 (5.571 municípios)"
+ },
+ "uf_RJ_m22": {
+  "valor": 10.406435579855376,
+  "texto": "10,4",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "UF RJ: |soma bolsonaro_22 − soma lula_22| / soma validos_22"
+ },
+ "uf_RJ_vir": {
+  "valor": 13.0,
+  "texto": "13",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "UF RJ: municípios com venc_22 == 13 e venc_26 == 22"
+ },
+ "uf_SP_m26": {
+  "valor": 13.730728368680431,
+  "texto": "13,7",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "UF SP: |soma flavio_26 − soma lula_26| / soma validos_26 (5.571 municípios)"
+ },
+ "uf_SP_m22": {
+  "valor": 6.820760128863305,
+  "texto": "6,8",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "UF SP: |soma bolsonaro_22 − soma lula_22| / soma validos_22"
+ },
+ "uf_SP_vir": {
+  "valor": 89.0,
+  "texto": "89",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "UF SP: municípios com venc_22 == 13 e venc_26 == 22"
+ },
+ "uf_ES_m26": {
+  "valor": 17.021444836651597,
+  "texto": "17,0",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "UF ES: |soma flavio_26 − soma lula_26| / soma validos_26 (5.571 municípios)"
+ },
+ "uf_ES_m22": {
+  "valor": 11.826502726089872,
+  "texto": "11,8",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "UF ES: |soma bolsonaro_22 − soma lula_22| / soma validos_22"
+ },
+ "uf_ES_vir": {
+  "valor": 7.0,
+  "texto": "7",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "UF ES: municípios com venc_22 == 13 e venc_26 == 22"
+ },
+ "uf_RS_m26": {
+  "valor": 19.913044371782483,
+  "texto": "19,9",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "UF RS: |soma flavio_26 − soma lula_26| / soma validos_26 (5.571 municípios)"
+ },
+ "uf_RS_m22": {
+  "valor": 6.603907467467902,
+  "texto": "6,6",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "UF RS: |soma bolsonaro_22 − soma lula_22| / soma validos_22"
+ },
+ "uf_RS_vir": {
+  "valor": 133.0,
+  "texto": "133",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "UF RS: municípios com venc_22 == 13 e venc_26 == 22"
+ },
+ "uf_GO_m26": {
+  "valor": 22.545661071580373,
+  "texto": "22,5",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "UF GO: |soma flavio_26 − soma lula_26| / soma validos_26 (5.571 municípios)"
+ },
+ "uf_GO_m22": {
+  "valor": 12.643865804655697,
+  "texto": "12,6",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "UF GO: |soma bolsonaro_22 − soma lula_22| / soma validos_22"
+ },
+ "uf_GO_vir": {
+  "valor": 69.0,
+  "texto": "69",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "UF GO: municípios com venc_22 == 13 e venc_26 == 22"
+ },
+ "uf_MS_m26": {
+  "valor": 23.921442844892027,
+  "texto": "23,9",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "UF MS: |soma flavio_26 − soma lula_26| / soma validos_26 (5.571 municípios)"
+ },
+ "uf_MS_m22": {
+  "valor": 13.661878089355662,
+  "texto": "13,7",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "UF MS: |soma bolsonaro_22 − soma lula_22| / soma validos_22"
+ },
+ "uf_MS_vir": {
+  "valor": 15.0,
+  "texto": "15",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "UF MS: municípios com venc_22 == 13 e venc_26 == 22"
+ },
+ "uf_PR_m26": {
+  "valor": 28.71189415485503,
+  "texto": "28,7",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "UF PR: |soma flavio_26 − soma lula_26| / soma validos_26 (5.571 municípios)"
+ },
+ "uf_PR_m22": {
+  "valor": 19.26550124231661,
+  "texto": "19,3",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "UF PR: |soma bolsonaro_22 − soma lula_22| / soma validos_22"
+ },
+ "uf_PR_vir": {
+  "valor": 91.0,
+  "texto": "91",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "UF PR: municípios com venc_22 == 13 e venc_26 == 22"
+ },
+ "uf_AC_m26": {
+  "valor": 35.82374335381375,
+  "texto": "35,8",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "UF AC: |soma flavio_26 − soma lula_26| / soma validos_26 (5.571 municípios)"
+ },
+ "uf_AC_m22": {
+  "valor": 33.23981611051513,
+  "texto": "33,2",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "UF AC: |soma bolsonaro_22 − soma lula_22| / soma validos_22"
+ },
+ "uf_AC_vir": {
+  "valor": 1.0,
+  "texto": "1",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "UF AC: municípios com venc_22 == 13 e venc_26 == 22"
+ },
+ "uf_MT_m26": {
+  "valor": 35.96570089219421,
+  "texto": "36,0",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "UF MT: |soma flavio_26 − soma lula_26| / soma validos_26 (5.571 municípios)"
+ },
+ "uf_MT_m22": {
+  "valor": 25.455589270753297,
+  "texto": "25,5",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "UF MT: |soma bolsonaro_22 − soma lula_22| / soma validos_22"
+ },
+ "uf_MT_vir": {
+  "valor": 15.0,
+  "texto": "15",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "UF MT: municípios com venc_22 == 13 e venc_26 == 22"
+ },
+ "uf_RO_m26": {
+  "valor": 41.55955370488782,
+  "texto": "41,6",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "UF RO: |soma flavio_26 − soma lula_26| / soma validos_26 (5.571 municípios)"
+ },
+ "uf_RO_m22": {
+  "valor": 35.379164890643075,
+  "texto": "35,4",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "UF RO: |soma bolsonaro_22 − soma lula_22| / soma validos_22"
+ },
+ "uf_RO_vir": {
+  "valor": 0.0,
+  "texto": "0",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "UF RO: municípios com venc_22 == 13 e venc_26 == 22"
+ },
+ "uf_SC_m26": {
+  "valor": 41.6106389459701,
+  "texto": "41,6",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "UF SC: |soma flavio_26 − soma lula_26| / soma validos_26 (5.571 municípios)"
+ },
+ "uf_SC_m22": {
+  "valor": 32.67594615911765,
+  "texto": "32,7",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "UF SC: |soma bolsonaro_22 − soma lula_22| / soma validos_22"
+ },
+ "uf_SC_vir": {
+  "valor": 27.0,
+  "texto": "27",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "UF SC: municípios com venc_22 == 13 e venc_26 == 22"
+ },
+ "uf_RR_m26": {
+  "valor": 48.196716275783686,
+  "texto": "48,2",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "UF RR: |soma flavio_26 − soma lula_26| / soma validos_26 (5.571 municípios)"
+ },
+ "uf_RR_m22": {
+  "valor": 46.528627303774854,
+  "texto": "46,5",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "UF RR: |soma bolsonaro_22 − soma lula_22| / soma validos_22"
+ },
+ "uf_RR_vir": {
+  "valor": 0.0,
+  "texto": "0",
+  "fonte": "data/derived/base_analitica_emendas.csv",
+  "como": "UF RR: municípios com venc_22 == 13 e venc_26 == 22"
+ },
+ "qn_1": {
+  "valor": 1,
+  "texto": "1",
+  "fonte": "rótulo",
+  "como": "número do quintil"
+ },
+ "qn_2": {
+  "valor": 2,
+  "texto": "2",
+  "fonte": "rótulo",
+  "como": "número do quintil"
+ },
+ "qn_3": {
+  "valor": 3,
+  "texto": "3",
+  "fonte": "rótulo",
+  "como": "número do quintil"
+ },
+ "qn_4": {
+  "valor": 4,
+  "texto": "4",
+  "fonte": "rótulo",
+  "como": "número do quintil"
+ },
+ "qn_5": {
+  "valor": 5,
+  "texto": "5",
+  "fonte": "rótulo",
+  "como": "número do quintil"
+ }
+}

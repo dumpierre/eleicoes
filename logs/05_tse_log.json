@@ -1,0 +1,27 @@
+{
+  "2022": {
+    "cd_eleicao": [
+      "544"
+    ],
+    "candidatos": [
+      "13 LULA (PT) [Válido]: 57259504",
+      "22 JAIR BOLSONARO (PL) [Válido]: 51072345",
+      "15 SIMONE TEBET (MDB) [Válido]: 4915423",
+      "12 CIRO GOMES (PDT) [Válido]: 3599287",
+      "44 SORAYA THRONICKE (UNIÃO) [Válido]: 600955",
+      "30 FELIPE D AVILA (NOVO) [Válido]: 559708",
+      "14 PADRE KELMON (PTB) [Válido]: 81129",
+      "80 LÉO PÉRICLES (UP) [Válido]: 53519",
+      "21 SOFIA MANZANO (PCB) [Válido]: 45620",
+      "16 VERA (PSTU) [Válido]: 25625",
+      "27 CONSTITUINTE EYMAEL (DC) [Válido]: 16604"
+    ],
+    "validos_total_com_exterior": 118229719,
+    "pct_13_com_exterior": 48.43,
+    "pct_22_com_exterior": 43.2,
+    "diferenca_22_menos_13_com_exterior": -6187159,
+    "outros_com_exterior": 9897870,
+    "municipios": 5570,
+    "validos_sem_exterior": 117935194
+  }
+}

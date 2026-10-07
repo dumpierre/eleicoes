@@ -1,0 +1,5 @@
+__pycache__/
+data/raw/tse/
+data/raw/mds/
+data/raw/sim/
+data/raw/cgu/
